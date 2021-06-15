@@ -1,0 +1,79 @@
+.blockServices {
+  background-color: var(--color-bg);
+}
+
+.item {
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+}
+
+.item:nth-child(1) {
+  border-top: 1px solid rgba(17, 17, 17, 0.1);
+}
+
+.item {
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: minmax(max-content, 300px) max-content 510px;
+  justify-content: space-between;
+}
+
+.more:hover:before {
+  opacity: 1;
+}
+
+.item a:hover .more {
+  color: var(--color-white);
+}
+
+.name {
+  font-size: 22px;
+  line-height: var(--line-height-120);
+  position: relative;
+  width: fit-content;
+  transition: var(--transition-default);
+}
+
+.name:hover svg {
+  opacity: 1;
+  transform: rotate(45.5deg);
+}
+
+.name svg {
+  fill: var(--color-main);
+  position: absolute;
+  right: -40px;
+  top: 2px;
+  opacity: 0;
+  transition: var(--transition-default);
+}
+
+.more {
+  position: relative;
+  z-index: var(--z-index-low);
+}
+
+.more:before {
+  content: '';
+  width: 93px;
+  height: 93px;
+  background-color: var(--color-main);
+  border-radius: 50%;
+  position: absolute;
+  left: 38px;
+  top: 15px;
+  z-index: var(--z-index-negative);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: var(--transition-slow);
+}
+
+.description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: var(--line-height-120)
+}
+
+.btn {
+  width: fit-content;
+  margin: 0 auto;
+}

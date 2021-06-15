@@ -1,0 +1,38 @@
+.steps {
+  display: grid;
+  grid-gap: 80px;
+  grid-template-columns: minmax(200px,300px) 1fr;
+  &__list {
+    display: grid;
+    grid-gap: 70px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__item {
+    span {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      background-color: rgba(241,137,73,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-bottom: 40px;
+      &:before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        background-color: var(--color-main);
+        border-radius: 50%;
+      }
+    }
+    h3 {
+      margin-bottom: 20px;
+    }
+    p {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: var(--line-height-150)
+    }
+  }
+}

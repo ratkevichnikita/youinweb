@@ -1,0 +1,97 @@
+.company-description {
+  display: grid;
+  grid-template-columns: 510px 510px;
+  justify-content: space-between;
+  align-items: center;
+  &__info {
+    h2 {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.company-statistic {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  &__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: var(--line-height-120);
+    margin-bottom: 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(17,17,170,.1);
+    span {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: var(--line-height-120);
+      padding-left: 10px;
+    }
+  }
+  &__desc {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: var(--line-height-120);
+  }
+}
+
+.company-quote {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  span {
+    display: block;
+    font-size: 12px;
+    line-height: var(--line-height-150);
+    color: var(--color-text);
+    margin-top: 40px;
+  }
+}
+
+.company-gallery {
+  .swiper-button-prev {
+    display: none;
+  }
+  .swiper-button-next {
+    width: 100px;
+    height: 100px;
+    right: 15vw;
+    margin-top: 30px;
+    background-color: var(--color-main);
+    border-radius: 50%;
+    &:after {
+      content: '';
+      width: 20px;
+      height: 20px;
+      background-image: url('../../assets/images/whitearrow.svg');
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: var(--transition-default);
+      position: absolute;
+      left: 40px;
+      top: 40px;
+    }
+    &:hover:after {
+      transform: rotate(46deg);
+    }
+  }
+  .swiper-container {
+    padding-bottom: 65px;
+  }
+}
+
+.company-gallery-title {
+  text-align: center;
+  h2 {
+    margin-top: 20px;
+  }
+  span {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: var(--line-height-120);
+    letter-spacing: 0.065em;
+    color: #797979;
+  }
+}

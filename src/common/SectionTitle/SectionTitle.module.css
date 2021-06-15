@@ -1,0 +1,5 @@
+.title {
+    display: grid;
+    grid-template-columns: max-content 510px;
+    justify-content: space-between;
+}

@@ -1,0 +1,32 @@
+.case-about {
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:not(:last-child) {
+      margin-bottom: 100px;
+    }
+    &:nth-child(2) {
+      .case-about__image {
+        order: 5;
+      }
+    }
+  }
+  &__image {
+    max-width: 510px;
+    width: 100%;
+    flex-shrink: 0;
+  }
+  &__info {
+    max-width: 45%;
+    width: 100%;
+    h2 {
+      margin-bottom: 40px;
+    }
+    p {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: var(--line-height-150);
+    }
+  }
+}

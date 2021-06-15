@@ -1,0 +1,40 @@
+.section-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: var(--line-height-120);
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  &__round {
+    width: 165px;
+    height: 165px;
+    margin-left: 50px;
+    background: url('../../assets/images/roundText.svg') no-repeat center;
+    animation: rotate 50s linear infinite forwards;
+  }
+  svg {
+    fill: var(--color-main);
+    transition: var(--transition-default);
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 20px);
+  }
+  &:hover svg {
+    transform: rotate(46deg);
+  }
+}
+
+.section-link-parent {
+  width: fit-content;
+  margin: 0 auto;
+}
+

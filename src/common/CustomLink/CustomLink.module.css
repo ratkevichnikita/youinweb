@@ -1,0 +1,55 @@
+.customLink {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    z-index: var(--z-index-low);
+    padding: 10px 0;
+}
+
+.customLink > span {
+    width: 44px;
+    height: 44px;
+    background-color: var(--color-main);
+    border-radius: 50%;
+    z-index: var(--z-index-low);
+    position: absolute;
+    left: 0;
+    top: -3px;
+    transition: 0.5s;
+}
+.customLinkBox {
+    font-size: 12px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    z-index: var(--z-index-meduim);
+    display: flex;
+    align-items: center;
+}
+.customLinkBox svg {
+    margin-left: 10px;
+    margin-top: 3px;
+    fill: var(--color-main);
+    transition: 0.5s;
+}
+
+.customLink:hover p {
+    transition-delay: 0.2s;
+}
+
+.customLink:hover span {
+  width: calc(100% + 20px);
+  height: 45px;
+  border-radius: 500px;
+}
+
+.customLink:hover svg {
+  fill: var(--color-white);
+    transform: rotate(47deg);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+  }
+}

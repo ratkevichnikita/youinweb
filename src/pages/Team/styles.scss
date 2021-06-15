@@ -1,0 +1,35 @@
+.header-team .offer__title .round-img {
+  margin-top: -60px;
+}
+
+.team {
+  &__title {
+    text-align: center;
+  }
+  &__list {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  }
+  &__mail,
+  &__subdivision {
+    font-size: 12px;
+    line-height: var(--line-height-150);
+    color: #797979;
+    padding-top: 3px;
+  }
+  &__phone {
+    font-size: 12px;
+    line-height: var(--line-height-120);
+    padding-top: 10px;
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background-color: var(--color-main);
+      border-radius: 50%;
+      margin-left: 10px;
+    }
+  }
+}

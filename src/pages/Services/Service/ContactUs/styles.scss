@@ -1,0 +1,27 @@
+.contacts-us {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  justify-content: space-between;
+  align-items: center;
+ &__box {
+   display: flex;
+   align-items: center;
+   &:hover {
+     svg {
+       transition-delay: 0.9s;
+       transform: rotate(47deg);
+     }
+   }
+   svg {
+     fill: var(--color-main);
+     margin-left: 15px;
+     margin-top: 5px;
+     transition: var(--transition-default);
+   }
+ }
+  &__info {
+    h2 {
+      margin-bottom: 60px;
+    }
+  }
+}

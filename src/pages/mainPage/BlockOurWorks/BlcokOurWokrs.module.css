@@ -1,0 +1,98 @@
+.works {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.worksList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2,max-content);
+  grid-gap: 50px;
+}
+
+.inner {
+  height: 100%;
+}
+
+.worksItem {
+  perspective: 1000px;
+
+}
+
+.image {
+  transition: var(--transition-slow);
+  overflow: hidden;
+}
+
+.image img,
+.worksItem .worksTitle {
+  transition: var(--transition-slow);
+}
+
+.worksItem:hover .image img {
+  transform: translate(-50%,-50%) scale(1.15)!important;
+}
+
+.worksItem:hover .worksTitle {
+  transform: rotateY(-3deg);
+}
+
+.worksItem:hover .image {
+  transform: scale(.95) rotateY(-9deg);
+}
+
+.worksItem:nth-child(1),
+.worksItem:nth-child(3) {
+  grid-row: span 2;
+}
+.worksItem:nth-child(1) .image,
+.worksItem:nth-child(3) .image {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+}
+.worksItem:nth-child(1) .image img,
+.worksItem:nth-child(3) .image img {
+  width: 100%;
+  height: 650px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  object-fit: cover;
+}
+.worksItem:nth-child(2) .image,
+.worksItem:nth-child(4) .image {
+  position: relative;
+  width: 100%;
+  height: 440px;
+  overflow: hidden;
+}
+.worksItem:nth-child(2) .image img,
+.worksItem:nth-child(4) .image img {
+  width: 100%;
+  height: 440px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  object-fit: cover;
+}
+.worksTitle {
+  margin-top: 10px;
+}
+
+.worksTitle p {
+  color: var(--color-text);
+  font-size: 12px;
+  line-height: var(--line-height-150);
+}
+
+.worksBtn {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/*hover effect*/
+

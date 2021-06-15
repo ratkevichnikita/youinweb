@@ -1,0 +1,18 @@
+.about-service {
+  &__content {
+    display: grid;
+    grid-template-columns: 500px 520px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__info {
+    h2 {
+      margin-bottom: 40px;
+    }
+    p {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: var(--line-height-150);
+    }
+  }
+}

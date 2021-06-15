@@ -1,0 +1,31 @@
+.inner {
+    display: grid;
+    grid-template-columns: 410px 45%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    max-width: 460px;
+}
+
+.title span {
+    margin-bottom: 20px;
+}
+
+.title h2 {
+    max-width: 400px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.description {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: var(--line-height-150);
+    margin-bottom:50px;
+}
+
+
+
+

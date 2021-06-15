@@ -1,0 +1,33 @@
+.clients {
+  &__title {
+    span {
+      margin-bottom: 20px;
+      display: block;
+    }
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,minmax(100px,220px));
+  }
+  &__item {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    &:not(:nth-child(3n)) {
+      border-right: 1px solid rgba(17,17,17,.1);
+    }
+    &:not(:nth-last-child(-n+3)) {
+      border-bottom: 1px solid rgba(17,17,17,.1);
+    }
+    .black {
+      filter: grayscale(1);
+      transition: var(--transition-default);
+    }
+    &:hover {
+      .black {
+        filter: grayscale(0);
+      }
+    }
+  }
+}

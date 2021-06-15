@@ -1,0 +1,140 @@
+.bouncing-letters {
+  position: relative;
+  padding-bottom: 2px;
+  width: fit-content;
+  overflow: hidden;
+  font-size: 22px;
+  line-height: var(--line-height-150);
+  text-transform: uppercase;
+  &:after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: var(--color-text);
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  &:hover {
+    &:after {
+      animation-name: width;
+    }
+    span {
+      animation-name: bounsing;
+    }
+  }
+  span {
+    display: inline-block;
+    flex-direction: row;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.12s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-iteration-count: 2;
+    &:nth-child(1) {
+      animation-delay: 0.03s;
+    }
+    &:nth-child(2) {
+      animation-delay: 0.06s;
+    }
+    &:nth-child(3) {
+      animation-delay: 0.09s;
+    }
+    &:nth-child(3) {
+      animation-delay: 0.12s;
+    }
+    &:nth-child(4) {
+      animation-delay: 0.15s;
+    }
+    &:nth-child(5) {
+      animation-delay: 0.18s;
+    }
+    &:nth-child(5) {
+      animation-delay: 0.21s;
+    }
+    &:nth-child(6) {
+      animation-delay: 0.24s;
+    }
+    &:nth-child(7) {
+      animation-delay: 0.27s;
+    }
+    &:nth-child(8) {
+      animation-delay: 0.3s;
+    }
+    &:nth-child(9) {
+      animation-delay: 0.33s;
+    }
+    &:nth-child(10) {
+      animation-delay: 0.35s;
+    }
+    &:nth-child(11) {
+      animation-delay: 0.38s;
+    }
+    &:nth-child(12) {
+      animation-delay: 0.41s;
+    }
+    &:nth-child(13) {
+      animation-delay: 0.44s;
+    }
+    &:nth-child(14) {
+      animation-delay: 0.47s;
+    }
+    &:nth-child(15) {
+      animation-delay: 0.5s;
+    }
+    &:nth-child(15) {
+      animation-delay: 0.53s;
+    }
+    &:nth-child(16) {
+      animation-delay: 0.56s;
+    }
+    &:nth-child(17) {
+      animation-delay: 0.59s;
+    }
+    &:nth-child(18) {
+      animation-delay: 0.62s;
+    }
+    &:nth-child(19) {
+      animation-delay: 0.65s;
+    }
+    &:nth-child(20) {
+      animation-delay: 0.69s;
+    }
+    &:nth-child(21) {
+      animation-delay: 0.72s;
+    }
+    &:nth-child(22) {
+      animation-delay: 0.75s;
+    }
+    &:nth-child(23) {
+      animation-delay: 0.78s;
+    }
+    &:nth-child(24) {
+      animation-delay: 0.81s;
+    }
+  }
+
+}
+
+@keyframes bounsing {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes width {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

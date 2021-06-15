@@ -1,0 +1,22 @@
+.case-statistics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  text-align: center;
+  font-weight: 700;
+
+  li {
+
+    p:nth-child(1) {
+      font-size: 70px;
+      line-height: var(--line-height-120);
+      margin-bottom: 10px;
+    }
+
+    p:nth-child(2) {
+
+      font-size: 18px;
+      line-height: var(--line-height-150);
+    }
+  }
+}

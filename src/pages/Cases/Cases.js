@@ -19,22 +19,13 @@ const Cases = React.memo(() => {
   const params = useParams();
 
   const [casesItems, setCasesItems] = useState([]);
-  const [paramsLabel, setParamsLabel] = useState('')
+  const [paramsLabel, setParamsLabel] = useState('');
 
-  let pageList = [];
   let counts = {};
   let casesCaptions = [];
   let casesNames = []
   let currentCases;
   let prefix;
-
-
-  useEffect(() => {
-    //получаем список страниц для header
-    for (let key in pages) {
-      pageList.push(pages[key])
-    }
-  }, [])
 
   //получаем массив с названиями кейсов
   for (let el of casesList) {
@@ -104,13 +95,13 @@ const Cases = React.memo(() => {
         <div className="wrapper">
           <div className="projects">
             <ul className="projects__captions">
-              {/*<li className={paramsLabel ? '' : 'active'}>*/}
-              {/*  <Link to="/cases">*/}
-              {/*    <span>{casesList.length}</span>*/}
-              {/*    <p>All</p>*/}
-              {/*  </Link>*/}
-              {/*</li>*/}
-              {/*{captions}*/}
+              <li className={paramsLabel ? '' : 'active'}>
+                <Link to="/cases">
+                  <span>{casesList.length}</span>
+                  <p>All</p>
+                </Link>
+              </li>
+              {captions}
             </ul>
             <ul className="projects__list">
               {casesItems}

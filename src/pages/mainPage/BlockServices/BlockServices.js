@@ -23,7 +23,7 @@ const BlockServices = (props) => {
             </Link>
           </OnMouseHover>
           <OnMouseHover>
-            <Link to={`/cases`} className={classes.more}>
+            <Link to={`/cases/${item.label}`} className={classes.more}>
               See works
             </Link>
           </OnMouseHover>

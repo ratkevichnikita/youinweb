@@ -14,6 +14,9 @@ import Case from "./pages/Cases/Case/Case";
 import Team from "./pages/Team/Team";
 import ScrollToTop from "./common/ScrollToTop/ScrollToTop";
 import Modal from "./components/Modal/Modal";
+import Contacts from "./pages/Contacts/Contacts";
+import Form from "./common/Form/Form";
+import News from "./pages/News/News";
 
 //styles
 import './App.css';
@@ -21,8 +24,7 @@ import './assets/styles/helpers.css';
 
 //images
 import sprite from "./assets/images/sprite/sprite.svg";
-import Contacts from "./pages/Contacts/Contacts";
-import Form from "./common/Form/Form";
+
 
 function App() {
 
@@ -132,6 +134,10 @@ function App() {
         <>
           <ScrollToTop/>
           <Route path="/kontakt" render={() => <Contacts />}/>
+        </>
+        <>
+          <ScrollToTop/>
+          <Route path="/news" render={() => <News />}/>
         </>
         {
           modalForm && (

@@ -2,10 +2,6 @@
 import React, {useEffect, useState} from 'react';
 import newsList from "../../JSON/json-news";
 
-//components
-import Footer from "../../components/Footer/Footer";
-import HeaderContainer from "../../components/Header/HeaderContainer";
-
 //styles
 import './styles.scss';
 
@@ -14,6 +10,26 @@ const News = () => {
   const [newsItems, setNewsItems] = useState([]);
   let listOfNews;
 
+  // let customBtn = document.querySelector('.elem');
+  // let container = document.querySelector('.item');
+  // let buttonCenterX = customBtn.offsetLeft + (customBtn.offsetWidth / 2);
+  // let buttonCenterY = customBtn.offsetTop + (customBtn.offsetHeight / 2);
+  // function getMousePos(xRef, yRef) {
+  //   let panelRect = container.getBoundingClientRect();
+  //   return {
+  //     x: Math.floor(xRef - panelRect.left) / (panelRect.right - panelRect.left) * container.offsetWidth,
+  //     y: Math.floor(yRef - panelRect.top) /  (panelRect.bottom - panelRect.top) * container.offsetHeight
+  //   };
+  // }
+  // container.addEventListener("mousemove", function(e) {
+  //   let mousePos = getMousePos(e.clientX, e.clientY),
+  //     distX = mousePos.x - buttonCenterX,
+  //     distY = mousePos.y - buttonCenterY;
+  //   if (Math.abs(distX) < 500 && distY < 200) {
+  //     customBtn.style.transform = "translate("+(-1 * distX) / 4 + "px," + (-1 * distY) / 4 + "px)";
+  //   }
+  // })
+
   useEffect(()=> {
     setNewsItems(newsList);
   },[]);
@@ -21,9 +37,8 @@ const News = () => {
   if(newsItems.length > 0) {
     listOfNews = newsItems.map(item => {
       return (
-        <li key={item.id}>
-          <span>2</span>
-          <p>{item.category}</p>
+        <li className="item" key={item.id}>
+          <p className="elem" >{item.category}</p>
         </li>
       )
     })
@@ -31,34 +46,15 @@ const News = () => {
 
   return (
     <>
-      <HeaderContainer black/>
       <section className="alone-section">
         <div className="wrapper">
           <div className="news">
             <ul className="news__category">
-              <li>
-                <span>2</span>
-                <p>All</p>
-              </li>
               {listOfNews}
-            </ul>
-            <ul className="news__list">
-              <li>
-                <div className="news__image">
-                  <img src={''} alt=""/>
-                </div>
-                <h5>
-                  Involve reorganizes for further growth
-                </h5>
-                <p>
-                  Both new clients and several new projects have led to some significant organizational changes for the Havas-affiliate, Involve in Oslo.   Although 2020 has been challenging, we experienced ...
-                </p>
-              </li>
             </ul>
           </div>
         </div>
       </section>
-      <Footer/>
     </>
   );
 };

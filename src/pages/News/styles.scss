@@ -24,18 +24,26 @@
 //  }
 //}
 
-.elem {
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
-  text-align: center;
-  font-size: 14px;
-  border: 1px solid red;
-  background-color: red;
-  transition:  .2s;
-  border-radius: 50%;
-}
+//.elem {
+//  width: 100px;
+//  height: 100px;
+//  line-height: 100px;
+//  text-align: center;
+//  font-size: 14px;
+//  border: 1px solid red;
+//  background-color: red;
+//  transition:  .2s;
+//  border-radius: 50%;
+//}
+//.item {
+//  padding: 10px;
+//  width: fit-content;
+//  border: 1px solid;
+//}
+
+.elem,
 .item {
-  padding: 10px;
+  border: 1px solid;
   width: fit-content;
+  transition: 0.5s;
 }

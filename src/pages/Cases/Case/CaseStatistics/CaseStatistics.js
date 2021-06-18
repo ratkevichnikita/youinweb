@@ -5,7 +5,7 @@ import './styles.scss';
 
 const CaseStatistics = () => {
   return (
-    <section className="pb-120">
+    <section className="pb-150">
       <div className="wrapper">
           <ul className="case-statistics">
             <li>

@@ -12,7 +12,7 @@ const Footer = () => {
   const {handleOpen} = useContext(Context)
 
   return (
-    <footer className="pt-120">
+    <footer className="pt-150">
       <div className="wrapper">
         <div className="block-footer">
           <ul className="block-footer__list">

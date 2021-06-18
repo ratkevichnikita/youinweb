@@ -21,7 +21,8 @@ const Case = () => {
       <div className="header header-bg-image header-case">
         <HeaderContainer/>
         <Offer>
-          <h1>Midgard <br/> vikingsenter</h1>
+          <h1>Philippe <br/>
+            de Cheron</h1>
           <div className="offer__box pt-80">
             <div>
               <ul className="offer__list-for-case">

@@ -10,7 +10,9 @@ import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 
 //images
-import slide from "./../../../../assets/images/cases/case/slider4.jpg";
+import slide from "./../../../../assets/images/cases/case/slider1.jpg";
+import slide2 from "./../../../../assets/images/cases/case/slider2.jpg";
+import slide3 from "./../../../../assets/images/cases/case/slider3.jpg";
 
 SwiperCore.use([Pagination,Navigation]);
 
@@ -39,10 +41,10 @@ const CaseGallery = () => {
                 <img data-src={slide} src={slide} alt=""/>
               </SwiperSlide>
               <SwiperSlide>
-                <img data-src={slide} src={slide} alt=""/>
+                <img data-src={slide2} src={slide2} alt=""/>
               </SwiperSlide>
               <SwiperSlide>
-                <img data-src={slide} src={slide} alt=""/>
+                <img data-src={slide3} src={slide3} alt=""/>
               </SwiperSlide>
             </Swiper>
           </div>

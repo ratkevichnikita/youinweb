@@ -30,12 +30,12 @@
   padding-top: 80px;
 }
 
-.pt-120 {
-  padding-top: 120px;
+.pt-150 {
+  padding-top: 150px;
 }
 
-.pb-120 {
-  padding-bottom: 120px;
+.pb-150 {
+  padding-bottom: 150px;
 }
 
 .mb-80 {
@@ -64,7 +64,7 @@
 /*align - end*/
 
 .section {
-  padding: 120px 0;
+  padding: 150px 0;
 }
 
 .alone-section {

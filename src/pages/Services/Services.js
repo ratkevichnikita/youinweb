@@ -37,13 +37,13 @@ const Services = React.memo(() => {
       numberOfPart = 'first';
       graphics = <div className="services__graphics first-graphics">
         <svg height="215" width="215" fill="#fff" fillOpacity={0} >
-          <circle cx="107" cy="107" r="106" stroke="#F18949" strokeWidth="1" fill="#fff" fillOpacity={0}/>
+          <circle cx="107" cy="107" r="106" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0}/>
         </svg>
         <svg height="140" width="140" fill="#fff" fillOpacity={0}>
-          <circle cx="70" cy="70" r="68" stroke="#F18949" strokeWidth="1" fill="#fff" fillOpacity={0}/>
+          <circle cx="70" cy="70" r="68" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0}/>
         </svg>
         <svg height="90" width="90">
-          <circle cx="45" cy="45" r="45" fill="#F18949"/>
+          <circle cx="45" cy="45" r="45" fill="#F84525"/>
         </svg>
       </div>
     }
@@ -51,13 +51,13 @@ const Services = React.memo(() => {
       numberOfPart = 'second';
       graphics = <div className="services__graphics second second-graphics">
               <svg height="140" width="140" fill="#fff" fillOpacity={0} >
-                <circle cx="70" cy="70" r="68" stroke="#F18949" strokeWidth="1" fill="#fff" fillOpacity={0}/>
+                <circle cx="70" cy="70" r="68" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0}/>
               </svg>
               <svg height="140" width="140">
-                <circle cx="70" cy="70" r="68" fill="#F18949"/>
+                <circle cx="70" cy="70" r="68" fill="#F84525"/>
              </svg>
               <svg height="140" width="140" fill="#fff" fillOpacity={0}>
-                <circle cx="70" cy="70" r="68" stroke="#F18949" strokeWidth="1" fill="#fff" fillOpacity={0}/>
+                <circle cx="70" cy="70" r="68" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0}/>
               </svg>
            </div>
     }
@@ -65,69 +65,69 @@ const Services = React.memo(() => {
       numberOfPart = 'therd';
       graphics =  <div className="services__graphics therd-graphics">
         <svg height="140" width="140" fill="#fff" fillOpacity={0} >
-          <circle cx="70" cy="70" r="68" stroke="#F18949" strokeWidth="1" fill="#fff" fillOpacity={0}/>
+          <circle cx="70" cy="70" r="68" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0}/>
         </svg>
         <svg height="90" width="90">
-          <circle cx="45" cy="45" r="45" fill="#F18949"/>
+          <circle cx="45" cy="45" r="45" fill="#F84525"/>
         </svg>
         <svg height="215" width="215" fill="#fff" fillOpacity={0}  >
-          <circle cx="107" cy="107" r="106" stroke="#F18949" strokeWidth="1" fill="#fff" fillOpacity={0}/>
+          <circle cx="107" cy="107" r="106" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0}/>
         </svg>
       </div>
     }
     if(item.id === 3) {
       numberOfPart = 'fourth';
-      graphics =  <div className="services__graphics">
+      graphics =  <div className="services__graphics fourth fourth-graphics">
         <svg height="100" width="100" fill="#fff" fillOpacity={0} >
-          <circle cx="50" cy="50" r="48" stroke="#F18949" strokeWidth="1" fill="#fff" fillOpacity={0}/>
+          <circle cx="50" cy="50" r="48" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0}/>
         </svg>
         <svg height="110" width="110" fill="#fff" fillOpacity={0} >
-          <circle cx="55" cy="55" r="53" stroke="#F18949" strokeWidth="1" fill="#fff" fillOpacity={0}/>
+          <circle cx="55" cy="55" r="53" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0}/>
         </svg>
         <svg height="140" width="140">
-          <circle cx="70" cy="70" r="68" fill="#F18949"/>
+          <circle cx="70" cy="70" r="68" fill="#F84525"/>
         </svg>
       </div>
     }
     if(item.id === 4) {
       numberOfPart = 'fifth';
-      graphics = <div className="services__graphics">
+      graphics = <div className="services__graphics fifth fifth-graphics">
         <svg height="140" width="140" fill="#fff" fillOpacity={0}>
-          <circle cx="70" cy="70" r="68" stroke="#F18949" strokeWidth="1" fill="#fff" fillOpacity={0}/>
+          <circle cx="70" cy="70" r="68" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0}/>
         </svg>
         <svg height="215" width="215" fill="#fff" fillOpacity={0}>
-          <circle cx="107" cy="107" r="106" stroke="#F18949" strokeWidth="1" fill="#fff" fillOpacity={0}/>
+          <circle cx="107" cy="107" r="106" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0}/>
         </svg>
         <svg height="90" width="90">
-          <circle cx="45" cy="45" r="45" fill="#F18949"/>
+          <circle cx="45" cy="45" r="45" fill="#F84525"/>
         </svg>
       </div>
     }
     if(item.id === 5) {
       numberOfPart = 'sixth';
-      graphics = <div className="services__graphics">
+      graphics = <div className="services__graphics sixth sixth-graphics">
         <svg height="140" width="140" fill="#fff"   >
-          <circle cx="70" cy="70" r="68" fill="#F18949" />
+          <circle cx="70" cy="70" r="68" fill="#F84525" />
         </svg>
         <svg height="110" width="110" >
-          <circle cx="55" cy="55" r="53" stroke="#F18949" strokeWidth="1" fill="#fff" fillOpacity={0} />
+          <circle cx="55" cy="55" r="53" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0} />
         </svg>
         <svg height="140" width="140" fill="#fff" fillOpacity={0} >
-          <circle cx="70" cy="70" r="68" stroke="#F18949" strokeWidth="1" fill="#fff" fillOpacity={0}/>
+          <circle cx="70" cy="70" r="68" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0}/>
         </svg>
       </div>
     }
     if(item.id === 6) {
       numberOfPart = 'seventh';
-      graphics = <div className="services__graphics">
+      graphics = <div className="services__graphics seventh seventh-graphics">
         <svg height="100" width="100">
-          <circle cx="50" cy="50" r="48" fill="#F18949"/>
+          <circle cx="50" cy="50" r="48" fill="#F84525"/>
         </svg>
         <svg height="215" width="215" fill="#fff" fillOpacity={0}>
-          <circle cx="107" cy="107" r="106" stroke="#F18949" strokeWidth="1" fill="#fff" fillOpacity={0}/>
+          <circle cx="107" cy="107" r="106" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0}/>
         </svg>
         <svg height="140" width="140" fill="#fff" fillOpacity={0}>
-          <circle cx="70" cy="70" r="68" stroke="#F18949" strokeWidth="1" fill="#fff" fillOpacity={0}/>
+          <circle cx="70" cy="70" r="68" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0}/>
         </svg>
       </div>
     }
@@ -135,13 +135,13 @@ const Services = React.memo(() => {
       numberOfPart = 'eighth';
       graphics = <div className="services__graphics">
         <svg height="140" width="140" >
-          <circle cx="70" cy="70" r="68" stroke="#F18949" strokeWidth="1" fill="#fff" fillOpacity={0} />
+          <circle cx="70" cy="70" r="68" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0} />
         </svg>
         <svg height="140" width="140" fill="#fff" fillOpacity={0} >
-          <circle cx="70" cy="70" r="68" stroke="#F18949" strokeWidth="1" fill="#fff" fillOpacity={0}/>
+          <circle cx="70" cy="70" r="68" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0}/>
         </svg>
         <svg height="140" width="140" fill="#fff"   >
-          <circle cx="70" cy="70" r="68" fill="#F18949" />
+          <circle cx="70" cy="70" r="68" fill="#F84525" />
         </svg>
       </div>
     }
@@ -149,13 +149,13 @@ const Services = React.memo(() => {
       numberOfPart = 'ninth';
       graphics = <div className="services__graphics">
         <svg height="140" width="140" fill="#fff" fillOpacity={0}>
-          <circle cx="70" cy="70" r="68" stroke="#F18949" strokeWidth="1" fill="#fff" fillOpacity={0}/>
+          <circle cx="70" cy="70" r="68" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0}/>
         </svg>
         <svg height="215" width="215" fill="#fff" fillOpacity={0}>
-          <circle cx="107" cy="107" r="106" stroke="#F18949" strokeWidth="1" fill="#fff" fillOpacity={0}/>
+          <circle cx="107" cy="107" r="106" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0}/>
         </svg>
         <svg height="90" width="90">
-          <circle cx="45" cy="45" r="45" fill="#F18949"/>
+          <circle cx="45" cy="45" r="45" fill="#F84525"/>
         </svg>
       </div>
     }
@@ -163,13 +163,13 @@ const Services = React.memo(() => {
       numberOfPart = 'tenth';
       graphics = <div className="services__graphics">
         <svg height="140" width="140" >
-          <circle cx="70" cy="70" r="68" stroke="#F18949" strokeWidth="1" fill="#fff" fillOpacity={0} />
+          <circle cx="70" cy="70" r="68" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0} />
         </svg>
         <svg height="140" width="140" fill="#fff"   >
-          <circle cx="70" cy="70" r="68" fill="#F18949" />
+          <circle cx="70" cy="70" r="68" fill="#F84525" />
         </svg>
         <svg height="110" width="110" fill="#fff" fillOpacity={0} >
-          <circle cx="55" cy="55" r="53" stroke="#F18949" strokeWidth="1" fill="#fff" fillOpacity={0}/>
+          <circle cx="55" cy="55" r="53" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0}/>
         </svg>
       </div>
     }

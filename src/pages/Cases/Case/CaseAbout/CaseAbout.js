@@ -20,13 +20,10 @@ const CaseAbout = () => {
               </div>
               <div className="case-about__info">
                 <h2>
-                  Hva ønsket kunden seg:
+                  The task set:
                 </h2>
                 <p>
-                  Midgard vikingsenter har som misjon å spre kunnskap om et av landets kjæreste kulturminner;
-                  vikinghistorien i Vestfold. I forbindelse med navnebytte fra Midgard historisk senter til Midgard
-                  vikingsenter, var reprofilering viktig for å fortsette å fortelle historien om Vestfold som hele
-                  Norges vikingfylke. Vikingsenteret ønsket seg en ny, allsidig, men unik logo.
+                  An order to maintain its position in the market and achieve wider distribution, Scanox wanted to revitalize its product. They wanted to expand the target group beyond just service to also cover the decor and interior market. The paint was to be presented in several matte colors, adapted to modern trends in the interior. In addition, there should have been new, good solutions in the service.
                 </p>
               </div>
             </div>
@@ -36,15 +33,12 @@ const CaseAbout = () => {
               </div>
               <div className="case-about__info">
                 <h2>
-                  Hva gjorde vi?
+                  And here's what we did
                 </h2>
                 <p>
-                  For å vise at det er kunnskap om vikinghistorie som senteret arbeider for, utarbeidet Involve en
-                  stilisert, grafisk viking som logoelement. Den moderniserte figuren brukes som emblem i logoen, og
-                  teksten ble spesialtilpasset emblemet. Logoen formidler ”levende vikingtid” da Midgard bringer
-                  vikinghistorien til live for sine besøkende gjennom arrangementer som gilder, aktivitetsdager og
-                  lignende. Vi har også utviklet en komplett designmanual hvor fargepalett, bildemaner, fonter,
-                  markedsmateriell og andre designelementer ble integrert.
+                  We stand behind visual identity, design of Prospect and new website including own plot selector. The purpose is to make the new website appear modern, be transparent and easy to navigate.
+                  <br/> <br/>
+                  Behind the work lies an analysis of what has both worked and not worked as well as how the consumer has navigated. Based on this, we have created a website that emphasizes what the consumer is concerned with while maintaining the visual qualities that the customer wants.
                 </p>
               </div>
             </div>

@@ -55,7 +55,7 @@ const About = React.memo(() => {
               </p>
             </div>
           </div>
-          <ul className="company-statistic pt-120">
+          <ul className="company-statistic pt-150">
             <li>
               <p className="company-statistic__title">
                 + 20
@@ -118,7 +118,7 @@ const About = React.memo(() => {
             </div>
         </div>
       </section>
-      <section className="pb-120">
+      <section className="pb-150">
           <div className="company-gallery-title">
             <span>fotogalleri</span>
             <h2>Our activities</h2>

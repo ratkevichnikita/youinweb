@@ -1,5 +1,5 @@
 // global dependencies
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import newsList from "../../JSON/json-news";
 
 //styles
@@ -7,42 +7,40 @@ import './styles.scss';
 
 const News = () => {
 
-  const [newsItems, setNewsItems] = useState([]);
-  let listOfNews;
-
-  // let customBtn = document.querySelector('.elem');
-  // let container = document.querySelector('.item');
-  // let buttonCenterX = customBtn.offsetLeft + (customBtn.offsetWidth / 2);
-  // let buttonCenterY = customBtn.offsetTop + (customBtn.offsetHeight / 2);
+  // const [newsItems, setNewsItems] = useState([]);
+  // let listOfNews;
+  //
+  // const customBtn = useRef(null)
+  // const container = useRef(null)
+  //
   // function getMousePos(xRef, yRef) {
-  //   let panelRect = container.getBoundingClientRect();
+  //   let panelRect = container.current.getBoundingClientRect();
   //   return {
-  //     x: Math.floor(xRef - panelRect.left) / (panelRect.right - panelRect.left) * container.offsetWidth,
-  //     y: Math.floor(yRef - panelRect.top) /  (panelRect.bottom - panelRect.top) * container.offsetHeight
+  //     x: Math.floor(xRef ) / (panelRect.right - panelRect.left) * container.current.offsetWidth,
+  //     y: Math.floor(yRef ) /  (panelRect.bottom - panelRect.top) * container.current.offsetHeight
   //   };
   // }
-  // container.addEventListener("mousemove", function(e) {
-  //   let mousePos = getMousePos(e.clientX, e.clientY),
-  //     distX = mousePos.x - buttonCenterX,
-  //     distY = mousePos.y - buttonCenterY;
-  //   if (Math.abs(distX) < 500 && distY < 200) {
-  //     customBtn.style.transform = "translate("+(-1 * distX) / 4 + "px," + (-1 * distY) / 4 + "px)";
-  //   }
+  //
+  // let handleMove = (e) => {
+  //   let mousePos = getMousePos(e.clientX, e.clientY);
+  //   let buttonCenterX = customBtn.current.offsetLeft + (customBtn.current.offsetWidth / 2);
+  //   let buttonCenterY = customBtn.current.offsetTop + (customBtn.current.offsetHeight / 2);
+  //     let distX = mousePos.x - buttonCenterX;
+  //     let distY = mousePos.y - buttonCenterY;
+  //     customBtn.current.style.transform = "translate("+(distX ) / 12 + "px," + (distY) / 8 + "px)";
+  // }
+  //
+  // useEffect(()=> {
+  //   setNewsItems(newsList);
+  // },[]);
+  //
+  // listOfNews = newsItems.map(item => {
+  //   return (
+  //     <li key={item.id} ref={container} onMouseMove={(e) => handleMove(e)} className="item">
+  //       <p ref={customBtn} className="elem" >{item.category}</p>
+  //     </li>
+  //   )
   // })
-
-  useEffect(()=> {
-    setNewsItems(newsList);
-  },[]);
-
-  if(newsItems.length > 0) {
-    listOfNews = newsItems.map(item => {
-      return (
-        <li className="item" key={item.id}>
-          <p className="elem" >{item.category}</p>
-        </li>
-      )
-    })
-  }
 
   return (
     <>
@@ -50,7 +48,10 @@ const News = () => {
         <div className="wrapper">
           <div className="news">
             <ul className="news__category">
-              {listOfNews}
+              {/*<li ref={container} onMouseMove={(e) => handleMove(e)} className="item">*/}
+              {/*  <p ref={customBtn} className="elem" >button</p>*/}
+              {/*</li>*/}
+              {/*{listOfNews}*/}
             </ul>
           </div>
         </div>

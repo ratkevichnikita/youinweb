@@ -67,6 +67,66 @@
           }
         }
       }
+      &.fourth .fourth-graphics {
+        svg {
+          &:nth-child(1) {
+            left: 240px;
+            animation-name: fourth-1;
+          }
+          &:nth-child(2) {
+            left: 50px;
+            animation-name: fourth-2;
+          }
+          &:nth-child(3) {
+            right: 170px;
+            animation-name: fourth-3;
+          }
+        }
+      }
+      &.fifth .fifth-graphics {
+        svg {
+          &:nth-child(1) {
+            left: 240px;
+            animation-name: fifth-1;
+          }
+          &:nth-child(2) {
+            right: 50px;
+            animation-name: fifth-2;
+          }
+          &:nth-child(3) {
+            right: 170px;
+            animation-name: fifth-3;
+          }
+        }
+      }
+      &.sixth .sixth-graphics {
+        svg {
+          &:nth-child(1) {
+
+            top: 0px;
+            animation-name: sixth-1;
+          }
+          &:nth-child(3) {
+
+            top: 0px;
+            animation-name: sixth-3;
+          }
+        }
+      }
+      &.seventh .seventh-graphics {
+        svg {
+          &:nth-child(1) {
+            left: 260px;
+            top: -40px;
+            animation-name: seventh-1;
+          }
+          &:nth-child(3) {
+            right: 270px;
+            top: 55px;
+            animation-name: seventh-3;
+          }
+        }
+      }
     }
 
   }
@@ -320,20 +380,84 @@
 
 .fourth {
   svg {
+    transition: 0.75s cubic-bezier(0.41, 0, 0.13, 1.005);
+    animation-delay: 0.75s;
+    animation-duration: 5.25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite ;
+    animation-direction: alternate;
     &:nth-child(1) {
       left: 45px;
     }
     &:nth-child(2) {
       left: 20px;
     }
+    &:nth-child(3) {
+      right: 0;
+    }
   }
+}
+
+@keyframes fourth-1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(23px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+.fourth-1 {
+  animation-name: fourth-1;
+}
+@keyframes fourth-2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+
+}
+.fourth-2 {
+  animation-name: fourth-2;
+}
+@keyframes fourth-3 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(7px);
+  }
+}
+.fourth-3 {
+  animation-name: fourth-3;
 }
 
 .fifth {
   svg {
+    transition: 0.75s cubic-bezier(0.41, 0, 0.13, 1.005);
+    animation-delay: 0.75s;
+    animation-duration: 5.25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite ;
+    animation-direction: alternate;
     &:nth-child(1) {
       left: 45px;
       top: 65px;
+    }
+    &:nth-child(2) {
+      right: 0;
     }
     &:nth-child(3) {
       right: 45px;
@@ -342,17 +466,92 @@
   }
 }
 
+@keyframes fifth-1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(23px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+.fifth-1 {
+  animation-name: fifth-1;
+}
+@keyframes fifth-2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+
+}
+.fifth-2 {
+  animation-name: fifth-2;
+}
+@keyframes fifth-3 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(7px);
+  }
+}
+.fifth-3 {
+  animation-name: fifth-3;
+}
+
 .sixth {
   svg {
+    transition: 0.75s cubic-bezier(0.41, 0, 0.13, 1.005);
+    animation-delay: 0.75s;
+    animation-duration: 1.75s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite ;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
     &:nth-child(1) {
       left: 30px;
-      bottom: 30px;
+      top: -30px;
     }
     &:nth-child(3) {
       right: 30px;
       top: 30px;
     }
   }
+}
+
+@keyframes sixth-1 {
+  0% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(-10px);
+  }
+
+}
+.sixth-1 {
+  animation-name: sixth-1;
+}
+@keyframes sixth-3 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+.sixth-3 {
+  animation-name: sixth-3;
 }
 
 .seventh {
@@ -366,6 +565,50 @@
       bottom: 45px;
     }
   }
+}
+
+.seventh {
+  svg {
+    transition: 0.75s cubic-bezier(0.41, 0, 0.13, 1.005);
+    animation-delay: 0.75s;
+    animation-duration: 1.75s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite ;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    &:nth-child(1) {
+      left: 45px;
+      top: 55px;
+    }
+    &:nth-child(3) {
+      right: 60px;
+      top: -40px;
+    }
+  }
+}
+
+@keyframes seventh-1 {
+  0% {
+    transform: translate(0,0);
+  }
+  100% {
+    transform: translate(10px, -10px);
+  }
+
+}
+.seventh-1 {
+  animation-name: seventh-1;
+}
+@keyframes seventh-3 {
+  0% {
+    transform: translate(0,0);
+  }
+  100% {
+    transform: translate(-10px, 10px);
+  }
+}
+.seventh-3 {
+  animation-name: seventh-3;
 }
 
 .eighth {

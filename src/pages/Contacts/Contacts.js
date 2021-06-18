@@ -24,7 +24,7 @@ const Contacts = () => {
             <span className="translate-parent"><span className="translate-content">convenient way</span></span>
             <span className="translate-parent"><span className="translate-content">or come to visit us</span></span>
           </h1>
-          <div className="offer__box pt-120 mw-full">
+          <div className="offer__box pt-150 mw-full">
             <ul className="contacts__info">
               <li>
                 <span className="contacts__icon"/>

@@ -1,8 +1,7 @@
 //global dependencies
 import React, {useEffect, useState} from 'react';
 import {Link, useParams} from "react-router-dom";
-import pages from './../../JSON/json-pages';
-import casesList from './../../JSON/json-cases';
+import cases from './../../JSON/json-cases';
 
 //components
 import HeaderContainer from "../../components/Header/HeaderContainer";
@@ -28,7 +27,7 @@ const Cases = React.memo(() => {
   let prefix;
 
   //получаем массив с названиями кейсов
-  for (let el of casesList) {
+  for (let el of cases) {
     casesCaptions.push(el.type)
   }
 
@@ -62,9 +61,9 @@ const Cases = React.memo(() => {
 
   // выводим список кейсов взамисимости от типа
   if (params.label) {
-    prefix = casesList.filter(item => item.type === params.label)
+    prefix = cases.filter(item => item.type === params.label)
   } else {
-    prefix = casesList
+    prefix = cases
   }
 
   currentCases = prefix.map(item => {
@@ -73,9 +72,9 @@ const Cases = React.memo(() => {
     let toUppercaseLetters = firstLetter + withoutFirstLetter;
     return <li key={item.id} className="projects__item">
       <OnMouseHover>
-        <Link to={`/cases/${item.id}/${item.name}`}>
+        <Link to={`/case/${item.slug}`}>
           <div className="projects__image">
-            <img src={`/static/images/cases/img${item.id}.jpg`} alt={`${item.name}`}/>
+            <img src={`${item.mainImage}/img${item.id}.jpg`} alt={`${item.name}`}/>
           </div>
           <span>{toUppercaseLetters}</span>
         </Link>
@@ -97,7 +96,7 @@ const Cases = React.memo(() => {
             <ul className="projects__captions">
               <li className={paramsLabel ? '' : 'active'}>
                 <Link to="/cases">
-                  <span>{casesList.length}</span>
+                  <span>{cases.length}</span>
                   <p>All</p>
                 </Link>
               </li>

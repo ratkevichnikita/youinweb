@@ -16,16 +16,16 @@ const BlockOurWorks = (props) => {
       return (
         <li className={classes.worksItem}>
           <OnMouseHover>
-            <Link to={`/cases/${item.id}/${item.name}`}>
+            <Link to={`/case/${item.slug}`}>
               <div className={classes.image}>
                 <img src={`/static/images/cases/img${item.id}.jpg`} alt="preview of work"/>
               </div>
               <div className={classes.worksTitle}>
                 <h4>
-                  Maui Jim
+                  {item.name}
                 </h4>
                 <p>
-                  Content / PR / Reclame
+                  {item.type}
                 </p>
               </div>
             </Link>

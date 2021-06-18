@@ -3,6 +3,7 @@ import React, {useEffect, useLayoutEffect, useState} from "react";
 import {Route, useLocation} from "react-router-dom";
 import {Context} from "./Context/Context";
 import services from "./JSON/json-services";
+import cases from './JSON/json-cases';
 
 //components
 import MainPage from "./pages/mainPage/mainPage";
@@ -34,6 +35,7 @@ function App() {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalForm, setModalForm] = useState(false);
   const [servicesList, setServicesList] = useState([])
+  const [casesList, setCasesList] = useState([])
 
   function handleOpen(event) {
     event.preventDefault()
@@ -45,8 +47,9 @@ function App() {
   let location = useLocation();
 
   useEffect(() => {
-    setServicesList(services)
-  }, [services])
+    setServicesList(services);
+    setCasesList(cases)
+  }, [services,cases])
 
   useEffect(() => {
     mouseElem = document.getElementById('mouseElem')
@@ -99,7 +102,7 @@ function App() {
 
   return (
     <Context.Provider value={{
-      setElemOnHover, handleOpen, servicesList, modalOpen, setModalOpen
+      setElemOnHover, handleOpen, servicesList, modalOpen, setModalOpen, casesList
     }}>
       <div className="App">
         <span id="mouseElem"/>
@@ -113,7 +116,7 @@ function App() {
         </>
         <>
           <ScrollToTop/>
-          <Route exact path="/cases/:id/:case" render={() => <Case/>}/>
+          <Route path="/case/:slug/" render={() => <Case/>}/>
         </>
         <>
           <ScrollToTop/>

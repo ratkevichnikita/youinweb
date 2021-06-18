@@ -42,7 +42,7 @@ const Cases = React.memo(() => {
   }
 
   // выводим список кейсов на страницу
-  let captions = casesNames.map((item, index, arr) => {
+  let captions = casesNames.map((item, index) => {
     let firstLetter = item[0].slice(0, 1).toUpperCase();
     let withoutFirstLetter = item[0].slice(1);
     let toUppercaseLetters = firstLetter + withoutFirstLetter;

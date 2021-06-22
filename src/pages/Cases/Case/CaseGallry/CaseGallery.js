@@ -32,7 +32,6 @@ const CaseGallery = () => {
               loop={true}
               slidesPerView={2.15}
               centeredSlides={true}
-
               speed={800}
               lazy={true}
               pagination={ { type: 'fraction' } }

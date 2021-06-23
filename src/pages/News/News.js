@@ -4,12 +4,14 @@ import newsList from "../../JSON/json-news";
 
 //styles
 import './styles.scss';
+import HeaderContainer from "../../components/Header/HeaderContainer";
+import Footer from "../../components/Footer/Footer";
 
 const News = () => {
 
-  // const [newsItems, setNewsItems] = useState([]);
-  // let listOfNews;
-  //
+  const [newsItems, setNewsItems] = useState([]);
+  let listOfCategoryNews;
+  let listOfNews;
   // const customBtn = useRef(null)
   // const container = useRef(null)
   //
@@ -30,32 +32,36 @@ const News = () => {
   //     customBtn.current.style.transform = "translate("+(distX ) / 12 + "px," + (distY) / 8 + "px)";
   // }
   //
-  // useEffect(()=> {
-  //   setNewsItems(newsList);
-  // },[]);
-  //
-  // listOfNews = newsItems.map(item => {
-  //   return (
-  //     <li key={item.id} ref={container} onMouseMove={(e) => handleMove(e)} className="item">
-  //       <p ref={customBtn} className="elem" >{item.category}</p>
-  //     </li>
-  //   )
-  // })
+  useEffect(()=> {
+    setNewsItems(newsList);
+  },[]);
+
+  listOfCategoryNews = newsItems.map(item => {
+    return (
+      <li key={item.id} className="item">
+        <p  className="elem">{item.category}</p>
+      </li>
+    )
+  })
 
   return (
     <>
+      <HeaderContainer black />
       <section className="alone-section">
         <div className="wrapper">
           <div className="news">
             <ul className="news__category">
-              {/*<li ref={container} onMouseMove={(e) => handleMove(e)} className="item">*/}
-              {/*  <p ref={customBtn} className="elem" >button</p>*/}
-              {/*</li>*/}
-              {/*{listOfNews}*/}
+              {listOfCategoryNews}
+            </ul>
+            <ul className="news__list">
+              <li className="news__item">
+
+              </li>
             </ul>
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 };

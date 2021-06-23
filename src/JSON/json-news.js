@@ -13,20 +13,20 @@ const newsList = [
       }
     ]
   },
-  // {
-  //   title: 'Norway – home of slow TV, mountain hiking an techy wearables?',
-  //   id: 1,
-  //   slug: 'norway–home-of-slow-TV-mountain-hiking-an-techy-wearables',
-  //   category: 'Design',
-  //   author: 'Don Mcdonald',
-  //   date: 'mars 12, 2021',
-  //   content: [
-  //     {
-  //       text: '',
-  //       image: '',
-  //     }
-  //   ]
-  // },
+  {
+    title: 'Norway – home of slow TV, mountain hiking an techy wearables?',
+    id: 1,
+    slug: 'norway–home-of-slow-TV-mountain-hiking-an-techy-wearables',
+    category: 'Design',
+    author: 'Don Mcdonald',
+    date: 'mars 12, 2021',
+    content: [
+      {
+        text: '',
+        image: '',
+      }
+    ]
+  },
 ]
 
 export default newsList;

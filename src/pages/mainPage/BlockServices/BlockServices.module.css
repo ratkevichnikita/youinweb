@@ -50,22 +50,28 @@
 .more {
   position: relative;
   z-index: var(--z-index-low);
+
 }
 
-.more:before {
-  content: '';
-  width: 93px;
-  height: 93px;
-  background-color: var(--color-main);
-  border-radius: 50%;
-  position: absolute;
-  left: 38px;
-  top: 15px;
-  z-index: var(--z-index-negative);
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: var(--transition-slow);
+.more span {
+  display: block;
+
 }
+
+/*.more:before {*/
+/*  content: '';*/
+/*  width: 93px;*/
+/*  height: 93px;*/
+/*  background-color: var(--color-main);*/
+/*  border-radius: 50%;*/
+/*  position: absolute;*/
+/*  left: 38px;*/
+/*  top: 15px;*/
+/*  z-index: var(--z-index-negative);*/
+/*  transform: translate(-50%, -50%);*/
+/*  opacity: 0;*/
+/*  transition: var(--transition-slow);*/
+/*}*/
 
 .description {
   font-weight: 300;

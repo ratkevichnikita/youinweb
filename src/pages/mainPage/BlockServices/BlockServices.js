@@ -7,42 +7,57 @@ import CustomLink from "../../../common/CustomLink/CustomLink";
 import SectionTitle from "../../../common/SectionTitle/SectionTitle";
 import sprite from "../../../assets/images/sprite/sprite.svg";
 import OnMouseHover from "../../../common/OnMouseHover/OnMouseHover";
-import SingleService from "./SingleService";
-
 
 const BlockServices = (props) => {
 
-  // const customBtn = useRef(null);
-  // const container = useRef(null);
-  //
-  //
-  // function getMousePos(xRef, yRef) {
-  //   let panelRect = container.current.getBoundingClientRect();
-  //   return {
-  //     x: Math.floor(xRef ) / (panelRect.right - panelRect.left) * container.current.offsetWidth,
-  //     y: Math.floor(yRef ) /  (panelRect.bottom - panelRect.top) * container.current.offsetHeight
-  //   };
-  // }
-  //
-  // let handleMove = (e) => {
-  //   let mousePos = getMousePos(e.clientX, e.clientY);
-  //   let buttonCenterX = customBtn.current.offsetLeft + (customBtn.current.offsetWidth / 2);
-  //   let buttonCenterY = customBtn.current.offsetTop + (customBtn.current.offsetHeight / 2);
-  //   let distX = mousePos.x - buttonCenterX;
-  //   let distY = mousePos.y - buttonCenterY;
-  //   customBtn.current.style.transform = "translate("+(distX ) / 12 + "px," + (distY) / 8 + "px)";
-  //   console.log('work')
-  // }
+  const customBtn = useRef(null);
+  const container = useRef(null);
 
-  //  let servicesList = props.services.map((item, index) => {
-  //
-  //   if (index < 5) {
-  //
-  //     return (
-  //       <SingleService />
-  //     )
-  //   }
-  // });
+  function getMousePos(xRef, yRef) {
+    let panelRect = container.current.getBoundingClientRect();
+
+    return {
+      x: Math.floor(xRef ) / (panelRect.left) * container.current.offsetWidth,
+      y: Math.floor(yRef ) /  (panelRect.top) * container.current.offsetHeight
+    };
+  }
+
+  let handleMove = (e) => {
+    let mousePos = getMousePos(e.clientX, e.clientY);
+    let buttonCenterX = customBtn.current.offsetLeft + (customBtn.current.offsetWidth );
+    let buttonCenterY = customBtn.current.offsetTop + (customBtn.current.offsetHeight );
+    let distX = mousePos.x - buttonCenterX;
+    let distY = mousePos.y - buttonCenterY;
+    customBtn.current.style.transform = "translate("+(distX )  + "px," + (distY)  + "px)";
+    console.log('work')
+  }
+
+   let servicesList = props.services.map((item, index) => {
+
+    if (index < 5) {
+
+      return (
+        <li key={item.id} className={classes.item}>
+           <OnMouseHover>
+             <Link to={`./vare-tjenester/${item.slug}`} className={classes.name}>
+               {item.name}
+               <svg width="24" height="24">
+                 <use href={sprite + '#arrow'}/>
+               </svg>
+             </Link>
+           </OnMouseHover>
+           <OnMouseHover >
+             <Link onMouseMove={(e) => handleMove(e)} ref={container}  to={`/cases/${item.label}`} className={classes.more}>
+
+               <span ref={customBtn}>See works</span>
+
+             </Link>
+           </OnMouseHover>
+           <p className={classes.description}>{item.description}</p>
+         </li>
+      )
+    }
+  });
 
   return (
     <section className={`section bg`}>
@@ -58,7 +73,7 @@ const BlockServices = (props) => {
             </h3>
           </SectionTitle>
           <ul className={`p-80 ${classes.list}`}>
-            {/*{servicesList}*/}
+            {servicesList}
           </ul>
         </div>
         <div className={classes.btn}>

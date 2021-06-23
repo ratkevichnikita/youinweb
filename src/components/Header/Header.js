@@ -32,7 +32,8 @@ const Header = ({
                   active,
                   pagesListForHeaderMenu,
                   handleOpen,
-                  pagesListForHamburgerMenu
+                  pagesListForHamburgerMenu,
+
                 }) => {
   return (
     <>

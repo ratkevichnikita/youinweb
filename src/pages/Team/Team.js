@@ -35,16 +35,16 @@ const Team = () => {
     setTeamItems(teamList)
   }, [])
 
-  // let listOfReklameAndDesign;
-  // let listOfPrAndContent;
-  // let listOfSisteleddProduksjon;
-  // let listOfAdmin;
+  let listOfReklameAndDesign;
+  let listOfPrAndContent;
+  let listOfSisteleddProduksjon;
+  let listOfAdmin;
   let fullListOfTeam
 
   if(teamItems.length > 0) {
     let getListOfTeam = (teamName) => {
       return teamItems
-        // .filter(item => item.subdivision === teamName)
+         .filter(item => item.subdivision === teamName)
         .map(item => {
           return (
             <li key={item.id}>
@@ -60,11 +60,11 @@ const Team = () => {
         })
     }
 
-    // listOfReklameAndDesign = getListOfTeam('reklame_design');
-    // listOfPrAndContent = getListOfTeam('pr_content');
-    // listOfSisteleddProduksjon = getListOfTeam('sisteledd_produksjon');
-    // listOfAdmin = getListOfTeam('admin.');
-    fullListOfTeam = getListOfTeam()
+    listOfReklameAndDesign = getListOfTeam('reklame_design');
+    listOfPrAndContent = getListOfTeam('pr_content');
+    listOfSisteleddProduksjon = getListOfTeam('sisteledd_produksjon');
+    listOfAdmin = getListOfTeam('admin.');
+    // fullListOfTeam = getListOfTeam()
   }
 
   return (
@@ -86,43 +86,43 @@ const Team = () => {
       <section id="reklame" className="section">
         <div className="wrapper">
           <h2 className="team__title">
-            Our Team
+            Reklame & Design
           </h2>
           <ul className="team__list pt-80">
-            {fullListOfTeam}
+            {listOfReklameAndDesign}
           </ul>
         </div>
       </section>
-      {/*<section className="section bg">*/}
-      {/*  <div className="wrapper">*/}
-      {/*    <h2 className="team__title">*/}
-      {/*      PR & Content*/}
-      {/*    </h2>*/}
-      {/*    <ul className="team__list pt-80">*/}
-      {/*      {listOfPrAndContent}*/}
-      {/*    </ul>*/}
-      {/*  </div>*/}
-      {/*</section>*/}
-      {/*<section className="section">*/}
-      {/*  <div className="wrapper">*/}
-      {/*    <h2 className="team__title">*/}
-      {/*      Sisteledd & Produksjon*/}
-      {/*    </h2>*/}
-      {/*    <ul className="team__list pt-80">*/}
-      {/*      {listOfSisteleddProduksjon}*/}
-      {/*    </ul>*/}
-      {/*  </div>*/}
-      {/*</section>*/}
-      {/*<section className="section bg">*/}
-      {/*  <div className="wrapper">*/}
-      {/*    <h2 className="team__title">*/}
-      {/*      Admin.*/}
-      {/*    </h2>*/}
-      {/*    <ul className="team__list pt-80">*/}
-      {/*      {listOfAdmin}*/}
-      {/*    </ul>*/}
-      {/*  </div>*/}
-      {/*</section>*/}
+      <section className="section bg">
+        <div className="wrapper">
+          <h2 className="team__title">
+            PR & Content
+          </h2>
+          <ul className="team__list pt-80">
+            {listOfPrAndContent}
+          </ul>
+        </div>
+      </section>
+      <section className="section">
+        <div className="wrapper">
+          <h2 className="team__title">
+            Sisteledd & Produksjon
+          </h2>
+          <ul className="team__list pt-80">
+            {listOfSisteleddProduksjon}
+          </ul>
+        </div>
+      </section>
+      <section className="section bg">
+        <div className="wrapper">
+          <h2 className="team__title">
+            Admin.
+          </h2>
+          <ul className="team__list pt-80">
+            {listOfAdmin}
+          </ul>
+        </div>
+      </section>
       <section className="section">
         <div className="company-gallery-title">
           <span>fotogalleri</span>

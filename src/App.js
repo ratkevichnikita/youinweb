@@ -1,5 +1,5 @@
 //global dependencies
-import React, {useEffect, useLayoutEffect, useState} from "react";
+import React, {useEffect, useLayoutEffect, useRef, useState} from "react";
 import {Route, useLocation} from "react-router-dom";
 import {Context} from "./Context/Context";
 import services from "./JSON/json-services";
@@ -26,23 +26,21 @@ import './assets/styles/helpers.css';
 //images
 import sprite from "./assets/images/sprite/sprite.svg";
 
-
 function App() {
 
   const [mousePosition, setMousePosition] = useState({left: 0, top: 0});
   const [elemOnHover, setElemOnHover] = useState(false);
+  const mouseElem = useRef(null);
   //for Context
   const [modalOpen, setModalOpen] = useState(false);
   const [modalForm, setModalForm] = useState(false);
-  const [servicesList, setServicesList] = useState([])
-  const [casesList, setCasesList] = useState([])
+  const [servicesList, setServicesList] = useState([]);
+  const [casesList, setCasesList] = useState([]);
 
   function handleOpen(event) {
     event.preventDefault()
     setModalForm(!modalForm);
   }
-
-  let mouseElem;
 
   let location = useLocation();
 
@@ -52,11 +50,10 @@ function App() {
   }, [services,cases])
 
   useEffect(() => {
-    mouseElem = document.getElementById('mouseElem')
     if (elemOnHover) {
-      mouseElem.classList.add('active');
+      mouseElem.current.classList.add('active');
     } else {
-      mouseElem.classList.remove('active');
+      mouseElem.current.classList.remove('active');
     }
   }, [elemOnHover])
 
@@ -64,11 +61,10 @@ function App() {
 
     let posX = mousePosition.left > 0 ? mousePosition : 0;
     let posY = mousePosition.top > 0 ? mousePosition : 0;
-    mouseElem = document.getElementById('mouseElem')
 
     function move() {
-      mouseElem.style.left = posX + 'px';
-      mouseElem.style.top = posY + 'px';
+      mouseElem.current.style.left = posX + 'px';
+      mouseElem.current.style.top = posY + 'px';
     }
 
     document.addEventListener("mousemove", (event) => {
@@ -105,7 +101,7 @@ function App() {
       setElemOnHover, handleOpen, servicesList, modalOpen, setModalOpen, casesList
     }}>
       <div className="App">
-        <span id="mouseElem"/>
+        <span ref={mouseElem} id="mouseElem"/>
         <>
           <ScrollToTop/>
           <Route exact path="/" render={() => <MainPage/>}/>
@@ -148,7 +144,7 @@ function App() {
               <div>
                 <div className="modal__small">
                     <span onClick={handleOpen} className="modal__close" >
-                       <svg width="30" height="30">
+                       <svg width="20" height="20">
                           <use href={sprite + '#close'}/>
                         </svg>
                     </span>

@@ -1,17 +1,28 @@
 // global dependencies
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import newsList from "../../JSON/json-news";
+
+//components
+import HeaderContainer from "../../components/Header/HeaderContainer";
+import Footer from "../../components/Footer/Footer";
 
 //styles
 import './styles.scss';
-import HeaderContainer from "../../components/Header/HeaderContainer";
-import Footer from "../../components/Footer/Footer";
+import OnMouseHover from "../../common/OnMouseHover/OnMouseHover";
+import {Link} from "react-router-dom";
 
 const News = () => {
 
   const [newsItems, setNewsItems] = useState([]);
+
   let listOfCategoryNews;
   let listOfNews;
+  let categoryCounts = {};
+  let newsCaptions = [];
+  let newsNames = []
+  let currentNews;
+  let prefix;
+
   // const customBtn = useRef(null)
   // const container = useRef(null)
   //
@@ -31,22 +42,58 @@ const News = () => {
   //     let distY = mousePos.y - buttonCenterY;
   //     customBtn.current.style.transform = "translate("+(distX ) / 12 + "px," + (distY) / 8 + "px)";
   // }
-  //
-  useEffect(()=> {
-    setNewsItems(newsList);
-  },[]);
 
-  listOfCategoryNews = newsItems.map(item => {
+  //получаем массив с категориями новостей
+  for (let el of newsItems) {
+    newsCaptions.push(el.category)
+  }
+
+  // убираем дубликаты и считаем количество новостей относящихся к категориям
+  newsCaptions.forEach((x) => {
+    categoryCounts[x] = (categoryCounts[x] || 0) + 1;
+  });
+
+  // название категорий и их количество записываем в массив
+  for (let item in categoryCounts) {
+    newsNames.push([item, categoryCounts[item]])
+  }
+
+  // записываем в стайт массив новостей
+  useEffect(() => {
+    setNewsItems(newsList);
+  }, []);
+
+
+  // Выводим список категорий и считаем количесво новостей в них
+  listOfCategoryNews = newsNames.map(item => {
     return (
+
       <li key={item.id} className="item">
-        <p  className="elem">{item.category}</p>
+        <OnMouseHover>
+          <Link to="#">
+            <span>{item[1]}</span>
+            <p className="elem">{item[0]}</p>
+          </Link>
+        </OnMouseHover>
+      </li>
+    )
+  });
+
+  currentNews = newsItems.map(item => {
+    return (
+      <li className="news__item">
+        <div className="news__image">
+          <img src={`${item.previewImage}/preview${item.id}.jpg`} alt={item.title}/>
+        </div>
+        <h4>{item.title}</h4>
+        <p>{item.desc}</p>
       </li>
     )
   })
 
   return (
     <>
-      <HeaderContainer black />
+      <HeaderContainer black/>
       <section className="alone-section">
         <div className="wrapper">
           <div className="news">
@@ -54,14 +101,12 @@ const News = () => {
               {listOfCategoryNews}
             </ul>
             <ul className="news__list">
-              <li className="news__item">
-
-              </li>
+              {currentNews}
             </ul>
           </div>
         </div>
       </section>
-      <Footer />
+      <Footer/>
     </>
   );
 };

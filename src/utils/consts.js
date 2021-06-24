@@ -1,0 +1,9 @@
+export const MAIN_PAGE_ROUTE = '/';
+export const CASES_ROUTE = '/cases/:label?';
+export const SERVICES_ROUTE = '/vare-tjenester';
+export const CONTACTS_ROUTE = '/kontakt';
+export const ABOUT_ROUTE = '/om-oss';
+export const TEAM_ROUTE = '/ansatte';
+export const NEWS_ROUTE = '/news';
+export const SINGLE_CASE_ROUTE = '/case/:slug/';
+export const SINGLE_SERVICE_ROUTE = '/vare-tjenester/:slug';

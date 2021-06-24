@@ -3,9 +3,11 @@ const newsList = [
     title: 'Involve reorganizes for further growth',
     id: 0,
     slug: 'involve-reorganizes-for-further-growth',
+    previewImage: '/static/images/news/',
     category: 'Reklame',
     author: 'Hege Thoresen',
-    date: 'mars 9, 2021',
+    date: 'May 9, 2021',
+    desc: 'Both new clients and several new projects have led to some significant organizational changes for the Havas-affiliate, Involve in Oslo.   Although 2020 has been challenging, we experienced',
     content: [
       {
         text: '',
@@ -17,9 +19,27 @@ const newsList = [
     title: 'Norway – home of slow TV, mountain hiking an techy wearables?',
     id: 1,
     slug: 'norway–home-of-slow-TV-mountain-hiking-an-techy-wearables',
+    previewImage: '/static/images/news/',
     category: 'Design',
-    author: 'Don Mcdonald',
-    date: 'mars 12, 2021',
+    author: 'Mark Duglas',
+    date: 'October 12, 2021',
+    desc: 'The creative Norwegian agency Involve, in Oslo, has renewed its deal with Havas. An important step for both parties, with a goal of a bigger impact in the Scandinavian market – and not least',
+    content: [
+      {
+        text: '',
+        image: '',
+      }
+    ]
+  },
+  {
+    title: 'We have a good news for you',
+    id: 2,
+    slug: 'norway–home-of-slow-TV-mountain-hiking-an-techy-wearables',
+    previewImage: '/static/images/news/',
+    category: 'Design',
+    author: 'Shon Ora',
+    date: 'June 12, 2021',
+    desc: 'The creative Norwegian agency Involve, in Oslo, has renewed its deal with Havas. An important step for both parties, with a goal of a bigger impact in the Scandinavian market – and not least',
     content: [
       {
         text: '',

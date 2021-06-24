@@ -2,14 +2,14 @@
 import React, {useContext, useEffect, useState} from 'react';
 import {Link, useLocation, useParams} from "react-router-dom";
 import {Context} from "../../Context/Context";
-
 import pages from "../../JSON/json-pages";
 
 //components
 import Header from "./Header";
 import OnMouseHover from "../../common/OnMouseHover/OnMouseHover";
-import sprite from "../../assets/images/sprite/sprite.svg";
 
+//images
+import sprite from "../../assets/images/sprite/sprite.svg";
 
 const HeaderContainer = React.memo(({black}) => {
 
@@ -31,11 +31,20 @@ const HeaderContainer = React.memo(({black}) => {
     setPagesList(pages)
   }, [])
 
+  let highlightHeaderLink = (elem) => {
+    let xlink = '';
+    if(params.label) {
+      xlink = '/' + params.label + '/'
+    }
+    return `/${elem.pageSlug}${xlink}` === location.pathname ? `active` : ''
+  }
+
   if (pagesList.length > 0) {
     pagesListForHeaderMenu = pagesList.map((item, index) => {
       if (item.pageName === 'Cases' || item.pageName === 'Vare-tjenester' || item.pageName === 'Kontakt') {
+
         return (
-          <li key={item + index} className={`/${item.pageSlug}` === location.pathname ? `active` : ''}>
+          <li key={item + index} className={highlightHeaderLink(item)}>
             <OnMouseHover>
               <Link to={item.pageSlug === 'home' ? '/' : `/${item.pageSlug}`}>{item.pageName}</Link>
             </OnMouseHover>
@@ -99,7 +108,7 @@ const HeaderContainer = React.memo(({black}) => {
       }
       if ((scrollTop + 30) > window.innerHeight) {
         header.classList.add('header-black')
-      } else if (location.pathname !== `/cases` && location.pathname !== `/cases/${params.label}/` && location.pathname !== `/vare-tjenester` && location.pathname !== `/vare-tjenester/${params.label}/` && location.pathname !== `/kontakt`) {
+      } else if (location.pathname !== `/cases` && location.pathname !== `/cases/${params.label}/` && location.pathname !== `/vare-tjenester` && location.pathname !== `/vare-tjenester/${params.label}/` && location.pathname !== `/kontakt`  && location.pathname !== `/news`) {
         header.classList.remove('header-black')
       }
     }

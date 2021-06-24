@@ -92,16 +92,16 @@
 
 .translate-content {
   display: block;
-  transform: translateY(100%);
+  transform: translateY(100%) ;
   animation: translateY 1.5s 0.5s cubic-bezier(.41,0,.13,1.005) forwards;
 }
 
 @keyframes translateY {
   0%{
-    transform: translateY(100%);
+    transform: translateY(100%) ;
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(0) ;
   }
 }
 

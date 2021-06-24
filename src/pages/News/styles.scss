@@ -1,4 +1,7 @@
 .news {
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
   &__category {
     display: flex;
     justify-content: center;
@@ -20,6 +23,38 @@
         right: -15px;
         top: -5px;
       }
+    }
+  }
+  &__list {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,380px));
+    justify-content: space-between;
+    grid-gap: 120px 0;
+  }
+  &__item {
+    h4 {
+      padding-top: 20px;
+    }
+    p {
+      font-size: 12px;
+      line-height: var(--line-height-150);
+      padding-top: 10px;
+    }
+  }
+  &__image {
+    width: 380px;
+    height: 420px;
+    overflow: hidden;
+    position: relative;
+    img {
+      width: 380px;
+      height: 420px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      object-fit: cover;
     }
   }
 }

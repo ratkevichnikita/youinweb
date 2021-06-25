@@ -1,8 +1,9 @@
 // global dependencies
 import React, {useContext} from 'react';
 import {Context} from "../../../Context/Context";
-//components
+import {useParams} from "react-router-dom";
 
+//components
 import HeaderContainer from "../../../components/Header/HeaderContainer";
 import Footer from "../../../components/Footer/Footer";
 import SectionLink from "../../../common/SectionLink/SectionLink";
@@ -14,7 +15,7 @@ import CaseStatistics from "./CaseStatistics/CaseStatistics";
 
 //images
 import round from "../../../assets/images/round.svg";
-import {useParams} from "react-router-dom";
+
 
 const Case = () => {
 

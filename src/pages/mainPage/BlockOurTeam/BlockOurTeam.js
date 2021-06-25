@@ -2,8 +2,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import {Swiper, SwiperSlide} from 'swiper/react';
-import SwiperCore, {Pagination, Navigation} from 'swiper';
-
+import SwiperCore, {Pagination, Navigation, Lazy} from 'swiper/core';
 
 //components
 import CustomLink from "../../../common/CustomLink/CustomLink";
@@ -15,8 +14,9 @@ import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/effect-cube/effect-cube.scss';
+import 'swiper/components/lazy/lazy.scss';
 
-SwiperCore.use([Pagination, Navigation]);
+SwiperCore.use([Pagination, Navigation, Lazy]);
 
 const BlockOurTeam = (props) => {
 
@@ -25,14 +25,10 @@ const BlockOurTeam = (props) => {
       <SwiperSlide key={item.id} >
         <OnMouseHover>
           <Link to="/ansatte/">
-            <img data-src={`${item.image}/${item.id}.jpg`} src={`${item.image}/${item.id}.jpg`} alt="item.name"/>
+            <img data-src={`${item.image}/${item.id}.jpg`} src={`${item.image}/${item.id}.jpg`} alt={item.name}/>
             <div className="ourteam__box">
-              <h4>
-                {item.name}
-              </h4>
-              <p>
-                {item.position}
-              </p>
+              <h4>{item.name}</h4>
+              <p>{item.position} </p>
             </div>
           </Link>
         </OnMouseHover>

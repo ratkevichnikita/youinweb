@@ -1,11 +1,27 @@
+//global dependencies
 import React, {useContext} from 'react';
 import {Link} from "react-router-dom";
+import {Context} from "../../Context/Context";
 
-import './styles.scss'
-import sprite from "../../assets/images/sprite/sprite.svg";
+//route links
+import {
+  ABOUT_ROUTE,
+  CASES_ROUTE,
+  CONTACTS_ROUTE,
+  MAIN_PAGE_ROUTE, NEWS_ROUTE,
+  SERVICES_ROUTE,
+  TEAM_ROUTE
+} from "../../utils/consts";
+
+//components
 import BouncingLetters from "../../common/BounsingLetters/BouncingLetters";
 import OnMouseHover from "../../common/OnMouseHover/OnMouseHover";
-import {Context} from "../../Context/Context";
+
+//styles
+import './styles.scss'
+
+//images
+import sprite from "../../assets/images/sprite/sprite.svg";
 
 const Footer = () => {
 
@@ -23,49 +39,49 @@ const Footer = () => {
               <ul className="block-footer__list-inner">
                 <li>
                   <OnMouseHover>
-                    <Link to="/">
+                    <Link to={`/`}>
                       Home
                     </Link>
                   </OnMouseHover>
                 </li>
                 <li>
                   <OnMouseHover>
-                    <Link to="/cases">
+                    <Link to={`/cases`}>
                       Cases
                     </Link>
                   </OnMouseHover>
                 </li>
                 <li>
                   <OnMouseHover>
-                    <Link to="/vare-tjenester">
+                    <Link to={`/services`}>
                       Services
                     </Link>
                   </OnMouseHover>
                 </li>
                 <li>
                   <OnMouseHover>
-                    <Link to="/om-oss">
+                    <Link to={`/about`}>
                       About
                     </Link>
                   </OnMouseHover>
                 </li>
                 <li>
                   <OnMouseHover>
-                    <Link to="/ansatte">
+                    <Link to={`/team`}>
                       Team
                     </Link>
                   </OnMouseHover>
                 </li>
                 <li>
                   <OnMouseHover>
-                    <Link to="/kontakt">
+                    <Link to={`/contacts`}>
                       Contact
                     </Link>
                   </OnMouseHover>
                 </li>
                 <li>
                   <OnMouseHover>
-                    <Link to="/">
+                    <Link to={`/news`}>
                       News
                     </Link>
                   </OnMouseHover>

@@ -39,7 +39,7 @@ const BlockServices = (props) => {
       return (
         <li key={item.id} className={classes.item}>
            <OnMouseHover>
-             <Link to={`./vare-tjenester/${item.slug}`} className={classes.name}>
+             <Link to={`./services/${item.slug}`} className={classes.name}>
                {item.name}
                <svg width="24" height="24">
                  <use href={sprite + '#arrow'}/>
@@ -56,6 +56,8 @@ const BlockServices = (props) => {
            <p className={classes.description}>{item.description}</p>
          </li>
       )
+    } else {
+      return null
     }
   });
 

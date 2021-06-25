@@ -14,8 +14,8 @@ const BlockOurWorks = (props) => {
   let casesList = props.cases.map((item,index) => {
     if(index < 4) {
       return (
-        <li className={classes.worksItem}>
-          <OnMouseHover>
+        <li key={item.name} className={classes.worksItem}>
+          <OnMouseHover >
             <Link to={`/case/${item.slug}`}>
               <div className={classes.image}>
                 <img src={`/static/images/cases/img${item.id}.jpg`} alt="preview of work"/>
@@ -32,6 +32,8 @@ const BlockOurWorks = (props) => {
           </OnMouseHover>
         </li>
       )
+    } else {
+      return null
     }
   })
 

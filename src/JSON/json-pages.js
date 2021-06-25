@@ -8,20 +8,20 @@ const pages = [
     pageSlug: 'cases',
   },
   {
-    pageName: 'Vare-tjenester',
-    pageSlug: 'vare-tjenester',
+    pageName: 'Services',
+    pageSlug: 'services',
   },
   {
-    pageName: 'Kontakt',
-    pageSlug: 'kontakt',
+    pageName: 'Contacts',
+    pageSlug: 'contacts',
   },
   {
-    pageName: 'Ansatte',
-    pageSlug: 'ansatte',
+    pageName: 'Team',
+    pageSlug: 'team',
   },
   {
-    pageName: 'Om oss',
-    pageSlug: 'om-oss',
+    pageName: 'About',
+    pageSlug: 'about',
   },
   {
     pageName: 'News',

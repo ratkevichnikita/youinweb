@@ -11,6 +11,9 @@
       font-weight: bold;
       font-size: 18px;
       line-height: var(--line-height-150);
+      &.active {
+        color: var(--color-main);
+      }
       &:not(:last-child) {
         margin-right: 60px;
       }

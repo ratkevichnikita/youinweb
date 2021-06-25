@@ -9,6 +9,14 @@
     &:nth-child(2) {
       padding-top: 80px;
     }
+    &:hover {
+      .block-news__hidden-word span {
+        transform: translateY(0);
+      }
+      .block-news__link svg {
+        transform: rotate(47deg);
+      }
+    }
   }
   &__title {
     padding-top: 20px;
@@ -22,6 +30,10 @@
       margin-bottom: 20px;
     }
   }
+  &__box {
+    display: flex;
+    align-items: center;
+  }
   &__link {
     width: 50px;
     height: 50px;
@@ -30,11 +42,6 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    &:hover {
-      svg {
-        transform: rotate(47deg);
-      }
-    }
     svg {
       fill: var(--color-white);
       transition: var(--transition-default);
@@ -43,5 +50,16 @@
   &__btn {
     margin: 0 auto;
     width: fit-content;
+  }
+  &__hidden-word {
+    overflow: hidden;
+    padding-left: 10px;
+    span {
+      display: block;
+      font-size: 12px;
+      line-height: var(--line-height-150);
+      transition: var(--transition-default);
+      transform: translateY(100%);
+    }
   }
 }

@@ -22,8 +22,7 @@ const HeaderContainer = React.memo(({black}) => {
   let location = useLocation();
   let params = useParams();
 
-  let scrollTop;
-  let onScroll;
+  // let onScroll;
   let pagesListForHeaderMenu;
   let pagesListForHamburgerMenu;
 
@@ -41,7 +40,7 @@ const HeaderContainer = React.memo(({black}) => {
 
   if (pagesList.length > 0) {
     pagesListForHeaderMenu = pagesList.map((item, index) => {
-      if (item.pageName === 'Cases' || item.pageName === 'Vare-tjenester' || item.pageName === 'Kontakt') {
+      if (item.pageName === 'Cases' || item.pageName === 'Services' || item.pageName === 'Contacts') {
 
         return (
           <li key={item + index} className={highlightHeaderLink(item)}>
@@ -50,6 +49,8 @@ const HeaderContainer = React.memo(({black}) => {
             </OnMouseHover>
           </li>
         )
+      } else {
+        return null
       }
     });
     pagesListForHamburgerMenu = pagesList.map((item,index) => {
@@ -95,8 +96,8 @@ const HeaderContainer = React.memo(({black}) => {
   }
 
   useEffect(() => {
-    scrollTop = Math.round(window.scrollY);
-    onScroll = () => {
+   let scrollTop = Math.round(window.scrollY);
+    let onScroll = () => {
       let header = document.getElementById('header');
       scrollTop = Math.round(window.scrollY);
       if (scrollTop > 0) {
@@ -108,7 +109,7 @@ const HeaderContainer = React.memo(({black}) => {
       }
       if ((scrollTop + 30) > window.innerHeight) {
         header.classList.add('header-black')
-      } else if (location.pathname !== `/cases` && location.pathname !== `/cases/${params.label}/` && location.pathname !== `/vare-tjenester` && location.pathname !== `/vare-tjenester/${params.label}/` && location.pathname !== `/kontakt`  && location.pathname !== `/news`) {
+      } else if (location.pathname !== `/cases` && location.pathname !== `/cases/${params.label}/` && location.pathname !== `/services` && location.pathname !== `/services/${params.label}/` && location.pathname !== `/contacts`  && location.pathname !== `/news`) {
         header.classList.remove('header-black')
       }
     }

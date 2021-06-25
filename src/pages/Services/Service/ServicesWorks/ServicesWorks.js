@@ -12,6 +12,8 @@ import img5 from '../../../../assets/images/cases/img5.jpg';
 import img6 from '../../../../assets/images/cases/img6.jpg';
 
 const ServicesWorks = () => {
+  let images ;
+
   return (
     <section className="section">
       <div className="wrapper">

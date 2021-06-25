@@ -18,7 +18,6 @@ import './assets/styles/helpers.css';
 import sprite from "./assets/images/sprite/sprite.svg";
 import AppRouter from "./components/AppRouter/AppRouter";
 
-
 function App() {
 
   const [elemOnHover, setElemOnHover] = useState(false);

@@ -177,7 +177,7 @@ const Services = React.memo(() => {
     return (
         <li key={item.id} className={`services__item p-80 ${numberOfPart}`}>
           <OnMouseHover >
-            <Link to={`/vare-tjenester/${item.slug}/`}>
+            <Link to={`/services/${item.slug}/`}>
               {graphics}
               <div className="services__info">
                 <span className="services__counter">{`0${item.id + 1}`}</span>

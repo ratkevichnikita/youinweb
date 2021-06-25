@@ -186,7 +186,7 @@ const Service = React.memo(() => {
       )
     })
 
-    getNumberOfNextPage = servicesList.filter(item => item.id === +getCurrentService[0].id + 1).map(item => `/vare-tjenester/${item.slug}`);
+    getNumberOfNextPage = servicesList.filter(item => item.id === +getCurrentService[0].id + 1).map(item => `/services/${item.slug}`);
 
   }
 
@@ -200,9 +200,9 @@ const Service = React.memo(() => {
       </div>
       <AboutService getCurrentService={getCurrentService}/>
       <Steps getCurrentService={getCurrentService}/>
-      {/*<ServicesWorks/>*/}
+      <ServicesWorks/>
       <ContactUs handleOpen={handleOpen}/>
-      <SectionLink path={getNumberOfNextPage.length === 0 ? '/vare-tjenester/reklame-markedsforing' : getNumberOfNextPage}>
+      <SectionLink path={getNumberOfNextPage.length === 0 ? '/services/reklame-markedsforing' : getNumberOfNextPage}>
         <p>Next service</p>
       </SectionLink>
       <Footer/>

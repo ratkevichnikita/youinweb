@@ -39,7 +39,7 @@ const Team = () => {
   let listOfPrAndContent;
   let listOfSisteleddProduksjon;
   let listOfAdmin;
-  let fullListOfTeam
+  // let fullListOfTeam
 
   if(teamItems.length > 0) {
     let getListOfTeam = (teamName) => {

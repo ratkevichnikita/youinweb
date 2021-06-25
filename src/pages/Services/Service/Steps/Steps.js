@@ -1,16 +1,17 @@
+//global dependencies
 import React from 'react';
 
+//styles
 import './styles.scss'
-import img from "../../../../assets/images/services/img.jpg";
 
 const Steps = ({getCurrentService}) => {
 
     let advantagesOfCurrentService;
-    let advanatages ;
+    let advantages ;
 
     if(getCurrentService.length > 0) {
       advantagesOfCurrentService = getCurrentService.map(item => item.advantages)
-      advanatages = advantagesOfCurrentService[0].map((item,index) => {
+      advantages = advantagesOfCurrentService[0].map((item,index) => {
         return (
           <li key={index} className="steps__item">
             <span />
@@ -32,7 +33,7 @@ const Steps = ({getCurrentService}) => {
               </h2>
             </div>
             <ul className="steps__list">
-              {advanatages}
+              {advantages}
             </ul>
           </div>
         </div>

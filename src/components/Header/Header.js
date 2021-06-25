@@ -33,7 +33,6 @@ const Header = ({
                   pagesListForHeaderMenu,
                   handleOpen,
                   pagesListForHamburgerMenu,
-
                 }) => {
   return (
     <>
@@ -68,7 +67,6 @@ const Header = ({
                   </ul>
                 </div>
               </div>
-
               <OnMouseHover clas={'header-logo'}>
                 <Link to='/' className="header__logo">
                   <svg width="121" height="28">
@@ -86,7 +84,6 @@ const Header = ({
                   </button>
                 </OnMouseHover>
               </div>
-
             </div>
           </div>
         </div>
@@ -104,113 +101,15 @@ const Header = ({
                 <nav className="nav">
                   <ul className="nav__list">
                     {pagesListForHamburgerMenu}
-                    {/*<li data-name="home" onMouseLeave={() => {*/}
-                    {/*  hiddenImages()*/}
-                    {/*}} onMouseEnter={(event) => {*/}
-                    {/*  showImages(event)*/}
-                    {/*}} className="nav__item modal-link-js">*/}
-                    {/*  <OnMouseHover>*/}
-                    {/*    <Link to="/" className="nav__link">*/}
-                    {/*      <p>Home</p>*/}
-                    {/*      <svg width="17" height="17">*/}
-                    {/*        <use href={sprite + '#arrow'}/>*/}
-                    {/*      </svg>*/}
-                    {/*    </Link>*/}
-                    {/*  </OnMouseHover>*/}
-                    {/*</li>*/}
-                    {/*<li data-name="cases" className="nav__item modal-link-js" onMouseLeave={() => {*/}
-                    {/*  hiddenImages()*/}
-                    {/*}} onMouseEnter={(event) => {*/}
-                    {/*  showImages(event)*/}
-                    {/*}}>*/}
-                    {/*  <OnMouseHover>*/}
-                    {/*    <Link to="/cases" className="nav__link">*/}
-                    {/*      <p>Cases</p>*/}
-                    {/*      <svg width="17" height="17">*/}
-                    {/*        <use href={sprite + '#arrow'}/>*/}
-                    {/*      </svg>*/}
-                    {/*    </Link>*/}
-                    {/*  </OnMouseHover>*/}
-                    {/*</li>*/}
-                    {/*<li data-name="services" className="nav__item modal-link-js" onMouseLeave={() => {*/}
-                    {/*  hiddenImages()*/}
-                    {/*}} onMouseEnter={(event) => {*/}
-                    {/*  showImages(event)*/}
-                    {/*}}>*/}
-                    {/*  <OnMouseHover>*/}
-                    {/*    <Link to="/vare-tjenester" className="nav__link">*/}
-                    {/*      <p>Vare-tjenester</p>*/}
-                    {/*      <svg width="17" height="17">*/}
-                    {/*        <use href={sprite + '#arrow'}/>*/}
-                    {/*      </svg>*/}
-                    {/*    </Link>*/}
-                    {/*  </OnMouseHover>*/}
-                    {/*</li>*/}
-                    {/*<li data-name="about" className="nav__item modal-link-js" onMouseLeave={() => {*/}
-                    {/*  hiddenImages()*/}
-                    {/*}} onMouseEnter={(event) => {*/}
-                    {/*  showImages(event)*/}
-                    {/*}}>*/}
-                    {/*  <OnMouseHover>*/}
-                    {/*    <Link to="/om-oss" className="nav__link">*/}
-                    {/*      <p>Om-oss</p>*/}
-                    {/*      <svg width="17" height="17">*/}
-                    {/*        <use href={sprite + '#arrow'}/>*/}
-                    {/*      </svg>*/}
-                    {/*    </Link>*/}
-                    {/*  </OnMouseHover>*/}
-                    {/*</li>*/}
-                    {/*<li data-name="team" className="nav__item modal-link-js" onMouseLeave={() => {*/}
-                    {/*  hiddenImages()*/}
-                    {/*}} onMouseEnter={(event) => {*/}
-                    {/*  showImages(event)*/}
-                    {/*}}>*/}
-                    {/*  <OnMouseHover>*/}
-                    {/*    <Link to="/ansatte" className="nav__link">*/}
-                    {/*      <p>Team</p>*/}
-                    {/*      <svg width="17" height="17">*/}
-                    {/*        <use href={sprite + '#arrow'}/>*/}
-                    {/*      </svg>*/}
-                    {/*    </Link>*/}
-                    {/*  </OnMouseHover>*/}
-                    {/*</li>*/}
-                    {/*<li data-name="contacts" className="nav__item modal-link-js" onMouseLeave={() => {*/}
-                    {/*  hiddenImages()*/}
-                    {/*}} onMouseEnter={(event) => {*/}
-                    {/*  showImages(event)*/}
-                    {/*}}>*/}
-                    {/*  <OnMouseHover>*/}
-                    {/*    <Link to="/kontakt" className="nav__link">*/}
-                    {/*      <p>Kontakt</p>*/}
-                    {/*      <svg width="17" height="17">*/}
-                    {/*        <use href={sprite + '#arrow'}/>*/}
-                    {/*      </svg>*/}
-                    {/*    </Link>*/}
-                    {/*  </OnMouseHover>*/}
-                    {/*</li>*/}
-                    {/*<li data-name="news" className="nav__item modal-link-js" onMouseLeave={() => {*/}
-                    {/*  hiddenImages()*/}
-                    {/*}} onMouseEnter={(event) => {*/}
-                    {/*  showImages(event)*/}
-                    {/*}}>*/}
-                    {/*  <OnMouseHover>*/}
-                    {/*    <Link to="#" className="nav__link">*/}
-                    {/*      <p>Aktuelt</p>*/}
-                    {/*      <svg width="17" height="17">*/}
-                    {/*        <use href={sprite + '#arrow'}/>*/}
-                    {/*      </svg>*/}
-                    {/*    </Link>*/}
-                    {/*  </OnMouseHover>*/}
-                    {/*</li>*/}
                   </ul>
                 </nav>
                 <div className="modal-images">
                   <img data-name="Home" src={home} className="modal-image" alt="home page"/>
                   <img data-name="Cases" src={cases} className="modal-image" alt="cases page"/>
-                  <img data-name="Vare-tjenester" src={services} className="modal-image" alt="services page"/>
-                  <img data-name="Om oss" src={about} className="modal-image" alt="about page"/>
-                  <img data-name="Ansatte" src={team} className="modal-image" alt="team page"/>
-                  <img data-name="Kontakt" src={contacts} className="modal-image" alt="contacts page"/>
+                  <img data-name="Services" src={services} className="modal-image" alt="services page"/>
+                  <img data-name="About" src={about} className="modal-image" alt="about page"/>
+                  <img data-name="Team" src={team} className="modal-image" alt="team page"/>
+                  <img data-name="Contacts" src={contacts} className="modal-image" alt="contacts page"/>
                   <img data-name="News" src={news} className="modal-image" alt="news page"/>
                   <img data-name="facebook" src={facebook} className="modal-image" alt="social facebook"/>
                   <img data-name="insta" src={insta} className="modal-image" alt="social instagram"/>
@@ -229,7 +128,7 @@ const Header = ({
                     }}>
                       <OnMouseHover clas={'social-link'}>
                         <a href="https://www.facebook.com/involveoslo/?ref=page_internal" target="_blank"
-                           rel="nofollow">
+                           rel="noreferrer nofollow">
                           <span> Facebook</span>
                         </a>
                       </OnMouseHover>

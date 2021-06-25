@@ -1,22 +1,25 @@
 // global dependencies
 import React, {useEffect, useState} from 'react';
+import {Link, useParams} from "react-router-dom";
 import newsList from "../../JSON/json-news";
 
 //components
 import HeaderContainer from "../../components/Header/HeaderContainer";
 import Footer from "../../components/Footer/Footer";
+import OnMouseHover from "../../common/OnMouseHover/OnMouseHover";
 
 //styles
 import './styles.scss';
-import OnMouseHover from "../../common/OnMouseHover/OnMouseHover";
-import {Link} from "react-router-dom";
 
 const News = () => {
 
+  const params = useParams();
+
   const [newsItems, setNewsItems] = useState([]);
+  const [paramsLabel, setParamsLabel] = useState('');
 
   let listOfCategoryNews;
-  let listOfNews;
+  // let listOfNews;
   let categoryCounts = {};
   let newsCaptions = [];
   let newsNames = []
@@ -63,14 +66,20 @@ const News = () => {
     setNewsItems(newsList);
   }, []);
 
+  // выводим список кейсов взамисимости от типа
+  if (params.label) {
+    prefix = newsItems.filter(item => item.category === params.label)
+  } else {
+    prefix = newsItems
+  }
 
+  console.log(params.label)
   // Выводим список категорий и считаем количесво новостей в них
   listOfCategoryNews = newsNames.map(item => {
     return (
-
-      <li key={item.id} className="item">
+      <li key={item[0]} className={item[0] === params.label ? `active` : ''}>
         <OnMouseHover>
-          <Link to="#">
+          <Link to={`/news/${item[0]}`}>
             <span>{item[1]}</span>
             <p className="elem">{item[0]}</p>
           </Link>
@@ -79,14 +88,16 @@ const News = () => {
     )
   });
 
-  currentNews = newsItems.map(item => {
+  currentNews = prefix.map(item => {
     return (
-      <li className="news__item">
+      <li key={item.id} className="news__item">
+        <Link to={`/news/${item.slug}`}>
         <div className="news__image">
           <img src={`${item.previewImage}/preview${item.id}.jpg`} alt={item.title}/>
         </div>
         <h4>{item.title}</h4>
         <p>{item.desc}</p>
+        </Link>
       </li>
     )
   })
@@ -98,9 +109,16 @@ const News = () => {
         <div className="wrapper">
           <div className="news">
             <ul className="news__category">
+              <li className={params.label ? '' : 'active'}>
+                <Link to="/news">
+                  <span>{newsItems.length}</span>
+                  <p>All</p>
+                </Link>
+              </li>
               {listOfCategoryNews}
             </ul>
             <ul className="news__list">
+
               {currentNews}
             </ul>
           </div>

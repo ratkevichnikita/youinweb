@@ -67,22 +67,19 @@ const Header = ({
                   </ul>
                 </div>
               </div>
-              <OnMouseHover clas={'header-logo'}>
-                <Link to='/' className="header__logo">
-                  <svg width="121" height="28">
-                    <use href={sprite + '#logo'}/>
-                  </svg>
-                </Link>
-              </OnMouseHover>
-              <div className="header__btn-wrapper">
-                <OnMouseHover clas={'header__btn'}>
-                  <button onClick={handleOpen}>
-                    ESTIMATE PROJECT
-                    <svg width="10" height="10">
-                      <use href={sprite + '#arrow'}/>
+              <div className="header__box">
+                <OnMouseHover clas={'header-logo'}>
+                  <Link to='/' className="header__logo">
+                    <svg width="121" height="28">
+                      <use href={sprite + '#logo'}/>
                     </svg>
-                  </button>
+                  </Link>
                 </OnMouseHover>
+                <div className="header__info">
+                  <p><span>Hoffsveien 1A 0275 Oslo </span></p>
+                  <Link to="mailto:post@involve.no"><span>post@involve.no</span></Link>
+                  <Link to="tel:23 25 36 00"><span>23 25 36 00</span></Link>
+                </div>
               </div>
             </div>
           </div>
@@ -91,11 +88,6 @@ const Header = ({
       {
         modalOpen && (
           <Modal setArrImages={setArrImages}>
-            <div className="info">
-              <p><span>Hoffsveien 1A 0275 Oslo </span></p>
-              <Link to="mailto:post@involve.no"><span>post@involve.no</span></Link>
-              <Link to="tel:23 25 36 00"><span>23 25 36 00</span></Link>
-            </div>
             <div className="wrapper">
               <div className="modal__inner">
                 <nav className="nav">
@@ -127,7 +119,7 @@ const Header = ({
                       showImages(event)
                     }}>
                       <OnMouseHover clas={'social-link'}>
-                        <a href="https://www.facebook.com/involveoslo/?ref=page_internal" target="_blank"
+                        <a href="#" target="_blank"
                            rel="noreferrer nofollow">
                           <span> Facebook</span>
                         </a>
@@ -140,7 +132,7 @@ const Header = ({
                       showImages(event)
                     }}>
                       <OnMouseHover clas={'social-link'}>
-                        <a href="https://www.instagram.com/involveoslo/" target="_blank" rel="noreferrer nofollow">
+                        <a href="#" target="_blank" rel="noreferrer nofollow">
                           <span>Instagram</span>
                         </a>
                       </OnMouseHover>
@@ -151,7 +143,7 @@ const Header = ({
                       showImages(event)
                     }}>
                       <OnMouseHover clas={'social-link'}>
-                        <a href="https://www.linkedin.com/company/involve-/" target="_blank" rel="noreferrer nofollow">
+                        <a href="#" target="_blank" rel="noreferrer nofollow">
                           <span> Linkedin</span>
                         </a>
                       </OnMouseHover>

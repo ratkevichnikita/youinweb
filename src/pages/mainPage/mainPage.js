@@ -35,25 +35,20 @@ const MainPage = React.memo(() => {
 
   return (
     <>
-      <div className="header header-bg-image header-main">
+      <div className="header header-black header-main">
         <HeaderContainer />
-        <Offer>
+        <Offer black>
           <h1>
-            <span className="translate-parent"><span className="translate-content">Vår filosofi er å tiltrekke</span></span>
-            <span className="translate-parent"><span className="translate-content">seg og interesse for</span></span>
-            <span className="translate-parent"><span className="translate-content">målgruppen</span></span>
+            <span className="translate-parent"><span className="translate-content">Advertising.Design.PR</span></span>
+            <span className="translate-parent"><span className="translate-content">We value time and</span></span>
+            <span className="translate-parent"><span className="translate-content">details</span></span>
           </h1>
           <div className="offer__box">
-            <div>
-              <p className="offer__desc">
-                Vi er 44 kommunikasjonsfolk som deler én enkel filosofi: den beste måten å skape relasjoner til et produkt
-                eller en tjeneste er å involvere og engasjere målgruppen. Dermed er vi: Involve.
-              </p>
+
               <CustomLink opensModal >
-                <p>ESTIMATE PROJECT</p>
+                <p>Contact us</p>
               </CustomLink>
-            </div>
-            <img src={round} className="round-img" alt="Vår filosofi er å tiltrekke seg og interesse for målgruppen"/>
+
           </div>
         </Offer>
       </div>

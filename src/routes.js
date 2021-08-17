@@ -6,7 +6,10 @@ import {
   MAIN_PAGE_ROUTE,
   NEWS_ROUTE,
   SERVICES_ROUTE,
-  SINGLE_CASE_ROUTE, SINGLE_SERVICE_ROUTE, TEAM_ROUTE
+  SINGLE_CASE_ROUTE,
+  SINGLE_SERVICE_ROUTE,
+  TEAM_ROUTE,
+  SINGLE_NEWS_ROUTE,
 } from "./utils/consts";
 import Cases from "./pages/Cases/Cases";
 import Case from "./pages/Cases/Case/Case";
@@ -16,6 +19,7 @@ import Contacts from "./pages/Contacts/Contacts";
 import News from "./pages/News/News";
 import Team from "./pages/Team/Team";
 import About from "./pages/About/About";
+import SingleNews from "./pages/News/SingleNews/SingleNews";
 
 export const Routes = [
   {
@@ -53,5 +57,9 @@ export const Routes = [
   {
     path: ABOUT_ROUTE,
     Component: About
+  },
+  {
+    path: SINGLE_NEWS_ROUTE,
+    Component: SingleNews
   }
 ]

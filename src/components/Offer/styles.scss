@@ -12,10 +12,11 @@
   &__box {
     max-width: 80%;
     padding-top: 30px;
+    min-height: 150px;
     display: grid;
     grid-template-columns: 1fr max-content;
     justify-content: space-between;
-
+    align-items: center;
   }
   &__list-for-case {
     &:before {

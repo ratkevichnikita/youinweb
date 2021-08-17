@@ -51,8 +51,8 @@ const BlockOurTeam = (props) => {
               }}
               spaceBetween={50}
               loop={true}
-              slidesPerGroup={4}
-              slidesPerView={4}
+              // slidesPerGroup={7}
+              slidesPerView={3}
               speed={800}
               lazy={true}
               pagination={{type: 'fraction'}}
@@ -62,7 +62,7 @@ const BlockOurTeam = (props) => {
             <div className="swiper-button-next" />
           </div>
           <div className="ourteam__btn">
-            <CustomLink path={"/ansatte"}>
+            <CustomLink path={"/team"}>
               Hele laget
             </CustomLink>
           </div>

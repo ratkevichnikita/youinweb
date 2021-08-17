@@ -27,7 +27,7 @@ const BlockNews = () => {
       return (
         <li key={item.slug} className="block-news__item">
           <OnMouseHover>
-            <Link to={`./news/${item.slug}`}>
+            <Link to={`./news/${item.id}/${item.slug}`}>
               <div className="block-news__image">
                 <img src={`${item.previewImage}/preview${item.id}.jpg`} alt={item.title}/>
               </div>

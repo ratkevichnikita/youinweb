@@ -109,7 +109,7 @@ const HeaderContainer = React.memo(({black}) => {
       }
       if ((scrollTop + 30) > window.innerHeight) {
         header.classList.add('header-black')
-      } else if (location.pathname !== `/cases` && location.pathname !== `/cases/${params.label}/` && location.pathname !== `/services` && location.pathname !== `/services/${params.label}/` && location.pathname !== `/contacts`  && location.pathname !== `/news`) {
+      } else if (location.pathname !== `/cases` && location.pathname !== `/cases/${params.label}/` && location.pathname !== `/services` && location.pathname !== `/services/${params.label}/` && location.pathname !== `/contacts`  && location.pathname !== `/news` && location.pathname !== `/news/${params.id}/${params.slug}`) {
         header.classList.remove('header-black')
       }
     }

@@ -33,6 +33,12 @@
   &__item {
     position: relative;
     max-width: 385px;
+    opacity: 0;
+    @for $i from 0 through 20 {
+      &:nth-child(#{$i}) {
+        animation: cardShow 1s  #{'0.' + $i + 2}s linear forwards;
+      }
+    }
     span {
       position: absolute;
       right: 20px;
@@ -65,5 +71,14 @@
     img {
       transition: 0.65s cubic-bezier(.67,0,.285,1);
     }
+  }
+}
+
+@keyframes cardShow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

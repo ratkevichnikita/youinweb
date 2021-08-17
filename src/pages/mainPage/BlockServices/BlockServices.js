@@ -79,7 +79,7 @@ const BlockServices = (props) => {
           </ul>
         </div>
         <div className={classes.btn}>
-          <CustomLink path={'/vare-tjenester'}>
+          <CustomLink path={'/services'}>
             see all services
           </CustomLink>
         </div>

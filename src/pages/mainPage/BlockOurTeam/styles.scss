@@ -5,6 +5,9 @@
     left: 15px;
     transform: translateY(-50%);
   }
+  &__slider {
+    max-width: 890px;
+  }
   #ourteam {
     padding: 90px 0 80px;
     padding-right: 45px;
@@ -36,7 +39,7 @@
   .swiper-button-next {
     width: 100px;
     height: 100px;
-    right: -60px;
+    right: 140px;
     margin-top: 15px;
     background-color: var(--color-main);
     border-radius: 50%;

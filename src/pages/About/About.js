@@ -29,13 +29,18 @@ const About = React.memo(() => {
         <HeaderContainer />
         <Offer>
           <h1>
-            <span><span>Involve is a company</span></span>
-            <span><span>with its own philosophy</span></span>
-            <span><span>and atmosphere</span></span></h1>
+            <span className="translate-parent"><span className="translate-content">GG is a company</span></span>
+            <span className="translate-parent"><span className="translate-content">with its own </span></span>
+            <span className="translate-parent"><span className="translate-content">philosophy</span></span>
+
+          </h1>
           <div className="offer__box">
             <div>
               <p className="offer__desc">
-                Involve is located in Skijen in Oslo. We are 44 communication people who share one simple philosophy: the best way to build a relationship with a product or service is to engage and engage the target audience. So, we: Engage.
+                <span className="translate-parent"><span className="translate-content"> GG is located in USA in NewYork.</span></span>
+                <span className="translate-parent"><span className="translate-content"> We are share one simple philosophy: </span></span>
+                <span className="translate-parent"><span className="translate-content">the best way to build a relationship with a product or service is </span></span>
+                <span className="translate-parent"><span className="translate-content">to engage and engage the target audience. So, we: Engage.</span></span>
               </p>
             </div>
             <img src={round} className="round-img" alt="Involve is a company with its own philosophy and atmosphere"/>

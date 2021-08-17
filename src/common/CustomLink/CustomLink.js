@@ -21,7 +21,7 @@ const CustomLink = React.memo(({children, path, opensModal}) => {
           <span />
           <div className={classes.customLinkBox}>
             {children}
-            <svg width="10" height="10">
+            <svg width="14" height="10">
               <use href={sprite + '#arrow'}/>
             </svg>
           </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import ScrollToTop from "../../common/ScrollToTop/ScrollToTop";
 import {Switch, Route} from "react-router-dom";
-import {Routes} from "../../routes,js";
+import {Routes} from "../../routes";
 
 const AppRouter = () => {
   return (

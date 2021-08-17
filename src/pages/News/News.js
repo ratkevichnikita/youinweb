@@ -73,7 +73,6 @@ const News = () => {
     prefix = newsItems
   }
 
-  console.log(params.label)
   // Выводим список категорий и считаем количесво новостей в них
   listOfCategoryNews = newsNames.map(item => {
     return (
@@ -91,7 +90,7 @@ const News = () => {
   currentNews = prefix.map(item => {
     return (
       <li key={item.id} className="news__item">
-        <Link to={`/news/${item.slug}`}>
+        <Link to={`/news/${item.id}/${item.slug}`}>
         <div className="news__image">
           <img src={`${item.previewImage}/preview${item.id}.jpg`} alt={item.title}/>
         </div>
@@ -118,7 +117,6 @@ const News = () => {
               {listOfCategoryNews}
             </ul>
             <ul className="news__list">
-
               {currentNews}
             </ul>
           </div>

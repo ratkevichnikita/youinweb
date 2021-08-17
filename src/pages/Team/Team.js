@@ -75,8 +75,8 @@ const Team = () => {
           <h1>
             <span className="translate-parent"><span className="translate-content">A team of </span></span>
             <span className="translate-parent"><span className="translate-content">professionals is the</span></span>
-            <span className="translate-parent"><span className="translate-content"> key to a successful</span></span>
-            <span className="translate-parent"><span className="translate-content">business</span></span>
+            <span className="translate-parent"><span className="translate-content"> key to a success</span></span>
+
           </h1>
           <div className="offer__box">
             <img src={round} className="round-img ml-auto" alt="Involve is a company with its own philosophy and atmosphere"/>
@@ -154,7 +154,7 @@ const Team = () => {
         </div>
 
       </section>
-      <SectionLink path="/vare-tjenester">
+      <SectionLink path="/services">
         <p>Our services</p>
       </SectionLink>
       <Footer />

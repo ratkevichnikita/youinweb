@@ -6,4 +6,5 @@ export const ABOUT_ROUTE = '/about';
 export const TEAM_ROUTE = '/team';
 export const NEWS_ROUTE = '/news/:label?';
 export const SINGLE_CASE_ROUTE = '/case/:slug/';
+export const SINGLE_NEWS_ROUTE = '/news/:id/:slug/';
 export const SINGLE_SERVICE_ROUTE = '/services/:slug';

@@ -109,7 +109,7 @@ const Cases = React.memo(() => {
         </div>
       </section>
       <BlockClients/>
-      <SectionLink path={'vare-tjenester'}>
+      <SectionLink path={'/services'}>
         <p> Our services</p>
       </SectionLink>
       <Footer/>

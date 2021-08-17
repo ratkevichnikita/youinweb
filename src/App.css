@@ -144,7 +144,9 @@ ul, li {
 }
 
 .header-main {
-    background-image: url(./assets/images/header_bg.jpg);
+    background-color: #F3F3F1;
+    height: 100vh;
+    min-height: 790px;
 }
 .header-service {
     background-color: var(--color-text);

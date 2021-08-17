@@ -24,7 +24,7 @@ const Contacts = () => {
             <span className="translate-parent"><span className="translate-content">convenient way</span></span>
             <span className="translate-parent"><span className="translate-content">or come to visit us</span></span>
           </h1>
-          <div className="offer__box pt-150 mw-full">
+          <div className="pt-150 mw-full">
             <ul className="contacts__info">
               <li>
                 <span className="contacts__icon"/>
@@ -68,10 +68,10 @@ const Contacts = () => {
           <div className="contacts section">
             <ul className="contacts__info contacts__info_column">
                 <li className="pb-80">
-                  <span/>
+                  <span className="contacts__icon" />
                   <div>
                     <p className="contacts__sub-text">
-                      Besøksadresse:
+                      Office adress:
                     </p>
                     <p className="contacts__main-text">
                       Bestumstubben 11 0281 Oslo
@@ -79,21 +79,21 @@ const Contacts = () => {
                   </div>
                 </li>
                 <li className="pb-80">
-                  <span/>
+                  <span className="contacts__icon" />
                   <div>
                     <p className="contacts__sub-text">
-                      Postadresse:
+                      Post adress:
                     </p>
                     <p className="contacts__main-text">
-                      Postboks 4151 Sjølyst 0217 OSLO
+                       4151 post box 0217 OSLO
                     </p>
                   </div>
                 </li>
                 <li>
-                  <span/>
+                  <span className="contacts__icon" />
                   <div>
                     <p className="contacts__sub-text">
-                      Foretaksregistrert:
+                      Post number:
                     </p>
                     <p className="contacts__main-text">
                       NO 997 726 537

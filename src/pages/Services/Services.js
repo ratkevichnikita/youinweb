@@ -133,7 +133,7 @@ const Services = React.memo(() => {
     }
     if(item.id === 7) {
       numberOfPart = 'eighth';
-      graphics = <div className="services__graphics">
+      graphics = <div className="services__graphics eighth eighth-graphics">
         <svg height="140" width="140" >
           <circle cx="70" cy="70" r="68" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0} />
         </svg>
@@ -147,7 +147,7 @@ const Services = React.memo(() => {
     }
     if(item.id === 8) {
       numberOfPart = 'ninth';
-      graphics = <div className="services__graphics">
+      graphics = <div className="services__graphics ninth ninth-graphics">
         <svg height="140" width="140" fill="#fff" fillOpacity={0}>
           <circle cx="70" cy="70" r="68" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0}/>
         </svg>
@@ -159,28 +159,13 @@ const Services = React.memo(() => {
         </svg>
       </div>
     }
-    if(item.id === 9) {
-      numberOfPart = 'tenth';
-      graphics = <div className="services__graphics">
-        <svg height="140" width="140" >
-          <circle cx="70" cy="70" r="68" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0} />
-        </svg>
-        <svg height="140" width="140" fill="#fff"   >
-          <circle cx="70" cy="70" r="68" fill="#F84525" />
-        </svg>
-        <svg height="110" width="110" fill="#fff" fillOpacity={0} >
-          <circle cx="55" cy="55" r="53" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0}/>
-        </svg>
-      </div>
-    }
-
     return (
         <li key={item.id} className={`services__item p-80 ${numberOfPart}`}>
           <OnMouseHover >
             <Link to={`/services/${item.slug}/`}>
               {graphics}
               <div className="services__info">
-                <span className="services__counter">{`0${item.id + 1}`}</span>
+                <span className="services__counter">{item.id >= 9 ? `${item.id + 1}` : `0${item.id + 1}`}</span>
                 <h3>{item.name}</h3>
                 <p>
                   {item.description}

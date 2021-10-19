@@ -54,7 +54,7 @@ const BlockAbout = () => {
                 <span className="sub-title">om oss</span>
                 <h2>Creating better products faster</h2>
               </div>
-              <p className={classes.description}>Involve er kjent for et godt miljø og lave skuldre og vi har en god og avslappet stemning på kontoret som fører til høy trivselsfaktor både for oss og våre kunder. Kombinasjonen av et uformelt miljø, mye kompetanse og lidenskap for jobben gir tillitsfulle kunderelasjoner som varer.</p>
+              <p className={classes.description}>GreyGlobal er kjent for et godt miljø og lave skuldre og vi har en god og avslappet stemning på kontoret som fører til høy trivselsfaktor både for oss og våre kunder. Kombinasjonen av et uformelt miljø, mye kompetanse og lidenskap for jobben gir tillitsfulle kunderelasjoner som varer.</p>
               <CustomLink path={"/about"}>
                 finn ut mer
               </CustomLink>

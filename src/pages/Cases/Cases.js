@@ -74,7 +74,7 @@ const Cases = React.memo(() => {
       <OnMouseHover>
         <Link to={`/case/${item.slug}`}>
           <div className="projects__image">
-            <img src={`${item.mainImage}/img${item.id}.jpg`} alt={`${item.name}`}/>
+            <img src={`/youinweb/${item.mainImage}/img${item.id}.jpg`} alt={`${item.name}`}/>
           </div>
           <span>{toUppercaseLetters}</span>
         </Link>

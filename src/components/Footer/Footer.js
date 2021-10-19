@@ -145,7 +145,7 @@ const Footer = () => {
               <ul className="block-footer__list-inner">
                 <li>
                   <OnMouseHover>
-                    <a href="mailto:post@involve.no">
+                    <a href="mailto:post@greyglobal.no">
                       grey@global.com
                     </a>
                   </OnMouseHover>

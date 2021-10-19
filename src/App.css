@@ -154,9 +154,9 @@ ul, li {
     min-height: 790px;
 }
 
-.header-case {
-    background-image: url('./assets/images/cases/case/case.jpg');
-}
+/*.header-case {*/
+/*    background-image: url('./assets/images/cases/case/case.jpg');*/
+/*}*/
 
 .header-about {
     background-image: url('./assets/images/aboutPage/about_bg.jpg');

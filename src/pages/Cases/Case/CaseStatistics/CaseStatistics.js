@@ -3,35 +3,25 @@ import React from 'react';
 //styles
 import './styles.scss';
 
-const CaseStatistics = () => {
+const CaseStatistics = ({getCurrentService}) => {
+
+  let statistics = getCurrentService.map(item => item.statistics)
+  let items;
+  if(statistics.length > 0) {
+    items = statistics[0].map(item => {
+      return (
+        <li key={item.number}>
+          <p>{item.number}</p>
+          <p> {item.title}</p>
+        </li>
+      )
+    })
+  }
   return (
     <section className="pb-150">
       <div className="wrapper">
           <ul className="case-statistics">
-            <li>
-              <p>
-                1 553 037
-              </p>
-              <p>
-                visninger
-              </p>
-            </li>
-            <li>
-              <p>
-                602 600
-              </p>
-              <p>
-                rekkevidde på personer
-              </p>
-            </li>
-            <li>
-              <p>
-                1 553 037
-              </p>
-              <p>
-                visninger
-              </p>
-            </li>
+            { items }
           </ul>
       </div>
     </section>

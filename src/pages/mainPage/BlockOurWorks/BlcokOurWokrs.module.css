@@ -14,9 +14,8 @@
   height: 100%;
 }
 
-.worksItem {
+.worksItem a {
   perspective: 1000px;
-
 }
 
 .image {

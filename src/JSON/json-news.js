@@ -1,13 +1,13 @@
 const newsList = [
   {
-    title: 'Involve reorganizes for further growth',
+    title: 'GreyGlobal reorganizes for further growth',
     id: 0,
-    slug: 'involve-reorganizes-for-further-growth',
+    slug: 'greyglobal-reorganizes-for-further-growth',
     previewImage: '/static/images/news/',
     category: 'Reklame',
     author: 'Hege Thoresen',
     date: 'May 9, 2021',
-    desc: 'Both new clients and several new projects have led to some significant organizational changes for the Havas-affiliate, Involve in Oslo.   Although 2020 has been challenging, we experienced',
+    desc: 'Both new clients and several new projects have led to some significant organizational changes for the Havas-affiliate, GreyGlobal in Oslo.   Although 2020 has been challenging, we experienced',
     content: [
       {
         text: '',
@@ -23,7 +23,7 @@ const newsList = [
     category: 'Design',
     author: 'Mark Duglas',
     date: 'October 12, 2021',
-    desc: 'The creative Norwegian agency Involve, in Oslo, has renewed its deal with Havas. An important step for both parties, with a goal of a bigger impact in the Scandinavian market – and not least',
+    desc: 'The creative Norwegian agency GreyGlobal, in Oslo, has renewed its deal with Havas. An important step for both parties, with a goal of a bigger impact in the Scandinavian market – and not least',
     content: [
       {
         text: '',
@@ -39,7 +39,7 @@ const newsList = [
     category: 'Design',
     author: 'Shon Ora',
     date: 'June 12, 2021',
-    desc: 'The creative Norwegian agency Involve, in Oslo, has renewed its deal with Havas. An important step for both parties, with a goal of a bigger impact in the Scandinavian market – and not least',
+    desc: 'The creative Norwegian agency GreyGlobal, in Oslo, has renewed its deal with Havas. An important step for both parties, with a goal of a bigger impact in the Scandinavian market – and not least',
     content: [
       {
         text: '',

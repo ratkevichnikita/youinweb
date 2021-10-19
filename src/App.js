@@ -63,7 +63,12 @@ function App() {
       setElemOnHover, handleOpen, servicesList, modalOpen, setModalOpen, casesList, elemOnHover
     }}>
       <div className="App">
-       <MouseElem />
+        {
+          document.documentElement.clientWidth > 1400 && (
+            <MouseElem />
+          )
+        }
+
         <AppRouter />
         {
           modalForm && (

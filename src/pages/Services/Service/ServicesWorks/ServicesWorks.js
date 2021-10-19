@@ -1,18 +1,35 @@
-import React from 'react';
+//global dependencies
+import React, {useEffect, useState} from 'react';
+import cases from '../../../../JSON/json-cases'
 
 //style
 import './styles.scss';
+import {Link} from "react-router-dom";
 
-//images
-import img1 from '../../../../assets/images/cases/img1.jpg';
-import img2 from '../../../../assets/images/cases/img2.jpg'
-import img3 from '../../../../assets/images/cases/img3.jpg';
-import img4 from '../../../../assets/images/cases/img4.jpg';
-import img5 from '../../../../assets/images/cases/img5.jpg';
-import img6 from '../../../../assets/images/cases/img6.jpg';
 
 const ServicesWorks = () => {
-  let images ;
+
+  const [casesImage, setCasesImage] = useState(null);
+  let x ;
+
+  useEffect(() => {
+    setCasesImage(cases)
+  }, [])
+
+  if(casesImage) {
+    x = casesImage.map((item,index) => {
+      if(index <= 5) {
+        return (
+          <li>
+            <Link to={`/case/${item.slug}`}>
+              <img src={`${item.bgImage}img${item.id}.jpg`} alt=""/>
+            </Link>
+          </li>
+        )
+      }
+
+    })
+  }
 
   return (
     <section className="section">
@@ -20,24 +37,27 @@ const ServicesWorks = () => {
         <div className="works ">
           <h2 className="text-center">Our work on this service</h2>
           <ul className="works__list pt-80">
-            <li>
-              <img src={img1} alt=""/>
-            </li>
-            <li>
-              <img src={img2} alt=""/>
-            </li>
-            <li>
-              <img src={img3} alt=""/>
-            </li>
-            <li>
-              <img src={img4} alt=""/>
-            </li>
-            <li>
-              <img src={img5} alt=""/>
-            </li>
-            <li>
-              <img src={img6} alt=""/>
-            </li>
+            {
+             x
+            }
+            {/*<li>*/}
+            {/*  <img src={img1} alt=""/>*/}
+            {/*</li>*/}
+            {/*<li>*/}
+            {/*  <img src={img2} alt=""/>*/}
+            {/*</li>*/}
+            {/*<li>*/}
+            {/*  <img src={img3} alt=""/>*/}
+            {/*</li>*/}
+            {/*<li>*/}
+            {/*  <img src={img4} alt=""/>*/}
+            {/*</li>*/}
+            {/*<li>*/}
+            {/*  <img src={img5} alt=""/>*/}
+            {/*</li>*/}
+            {/*<li>*/}
+            {/*  <img src={img6} alt=""/>*/}
+            {/*</li>*/}
           </ul>
         </div>
       </div>

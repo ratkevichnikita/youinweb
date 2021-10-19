@@ -42,7 +42,7 @@ const SingleNews = () => {
             </div>
             <div className="news-single__content news-container">
               <p className="news-single__content-title">
-                The creative Norwegian agency Involve, in Oslo, has renewed its deal with Havas. An important step for both parties, with a goal of a bigger impact in the Scandinavian market – and not least – the Norwegian market. A market and a people, which is maybe a bit different than you would think.
+                The creative Norwegian agency GreyGlobal, in Oslo, has renewed its deal with Havas. An important step for both parties, with a goal of a bigger impact in the Scandinavian market – and not least – the Norwegian market. A market and a people, which is maybe a bit different than you would think.
               </p>
               <div className="news-single__content-item">
                 <p>

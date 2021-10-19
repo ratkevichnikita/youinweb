@@ -29,7 +29,7 @@ let servicesList = [
     name: 'Design & Identitet',
     id: 1,
     description: 'Vi jobber grundig med å forstå hvem du vil være og hvem du vil treffe, og utarbeider ditt visuelle håndtrykk med kunden i bakhodet. Vi jobber systematisk og helhetlig for å konseptualisere dine ønsker.',
-    title: 'Merkevarens identitet er med å forme organisasjonens kultur, og design er identitetens ansikt utad. Involve leverer strategisk rådgivning, navneprosesser og grafisk løsninger i form av logo/visuelle identiteter, pakningsdesign og webdesign. Målet er å skape løsninger som vitaliserer merkevaren, forsterker egenart og konkurransekraft, og dermed skaper resultater.',
+    title: 'Merkevarens identitet er med å forme organisasjonens kultur, og design er identitetens ansikt utad. GreyGlobal leverer strategisk rådgivning, navneprosesser og grafisk løsninger i form av logo/visuelle identiteter, pakningsdesign og webdesign. Målet er å skape løsninger som vitaliserer merkevaren, forsterker egenart og konkurransekraft, og dermed skaper resultater.',
     label: 'design',
     slug: 'design-identitet',
     advantages: [
@@ -55,7 +55,7 @@ let servicesList = [
     name: 'Content & Sosiale medier',
     id: 2,
     description: 'Vi ser nye trender, behov og muligheter i både tradisjonelle og utradisjonelle kanaler og utforsker nye måter å treffe dine kunder på. Vi jobber innovativt og utadvendt med å fornye både innhold og uttak.',
-    title: 'Involve har stort fokus på content marketing og sosiale medier. Vi planlegger og produserer verdifullt, relevant redaksjonelt innhold som inspirerer og engasjerer din målgruppe. Kanalen velges etter det som treffer målgruppen best, enten det er et tradisjonelt kundemagasin eller løsninger på sosiale medier. Videre jobbes det med måling og optimalisering som ytterligere øker verdien av din investering i godt innhold .',
+    title: 'GreyGlobal har stort fokus på content marketing og sosiale medier. Vi planlegger og produserer verdifullt, relevant redaksjonelt innhold som inspirerer og engasjerer din målgruppe. Kanalen velges etter det som treffer målgruppen best, enten det er et tradisjonelt kundemagasin eller løsninger på sosiale medier. Videre jobbes det med måling og optimalisering som ytterligere øker verdien av din investering i godt innhold .',
     label: 'content',
     slug: 'content-sosiale-medier',
     advantages: [
@@ -81,7 +81,7 @@ let servicesList = [
     name: 'Pr & Rådgivning',
     id: 3,
     description: 'Vi benytter oss av vår sterke kompetanse innenfor PR, journalistikk, og content marketing for å skreddersy din kommunikasjonsløsning. Vi jobber entusiastisk og målbevisst for å trekke i de riktige trådene.',
-    title: 'Involve jobber aktivt med PR. Vi planlegger og produserer verdifullt, relevant redaksjonelt innhold som inspirerer og engasjerer din målgruppe. Kanalen velges etter det som treffer målgruppen best, enten det er et tradisjonelt kundemagasin eller løsninger på sosiale medier. Videre jobbes det med måling og optimalisering som ytterligere øker verdien av din investering i godt innhold .',
+    title: 'GreyGlobal jobber aktivt med PR. Vi planlegger og produserer verdifullt, relevant redaksjonelt innhold som inspirerer og engasjerer din målgruppe. Kanalen velges etter det som treffer målgruppen best, enten det er et tradisjonelt kundemagasin eller løsninger på sosiale medier. Videre jobbes det med måling og optimalisering som ytterligere øker verdien av din investering i godt innhold .',
     label: 'pr',
     slug: 'pr-radgiving',
     advantages: [
@@ -107,7 +107,7 @@ let servicesList = [
     name: 'Webdesign & Utvikling',
     id: 4,
     description: 'Vi bygger nettsider til alle type kunder, både i eksisterende systemer og helt fra bunnen av. Vi jobber aktivt med grensesnitt og brukervennlighet for å øke konvertering og trafikk til dine nettsider.',
-    title: 'Involve designer skreddersydd webdesign for store og små kunder. Vi kan tilby både tilpassede WordPressløsninger og helt selvstendige nettsider med unike funksjoner. Vi sørger for god tilstedeværelse på nett for alle våre kunder. Vi har kompetanse til å bistå med både frontend og backend og kan veilede deg i prosessen mot en bedre og mer funksjonell nettside. ',
+    title: 'GreyGlobal designer skreddersydd webdesign for store og små kunder. Vi kan tilby både tilpassede WordPressløsninger og helt selvstendige nettsider med unike funksjoner. Vi sørger for god tilstedeværelse på nett for alle våre kunder. Vi har kompetanse til å bistå med både frontend og backend og kan veilede deg i prosessen mot en bedre og mer funksjonell nettside. ',
     label: 'design',
     slug: 'web-design',
     advantages: [
@@ -133,7 +133,7 @@ let servicesList = [
     name: 'Seo & Sem',
     id: 5,
     description: 'Vi fokuserer alltid på best mulig tilstedeværelse på nett og gjør alt vi kan for at du får uttelling i alle dine kanaler. Vi jobber kontinuerlig og oppsøkende med å holde deg synlig og engasjerende på nett.',
-    title: 'I dag starter det meste på nettet. Undersøkelser indikerer at over 8 av 10 kjøp starter med et søk. Og ikke bare starter det der – i noen kategorier fullføres kundereisen på nettet. Men det starter med å bli funnet. Derfor sørger Involve for at du er med NÅR og DER kunden starter sin kjøpsprosess.',
+    title: 'I dag starter det meste på nettet. Undersøkelser indikerer at over 8 av 10 kjøp starter med et søk. Og ikke bare starter det der – i noen kategorier fullføres kundereisen på nettet. Men det starter med å bli funnet. Derfor sørger GreyGlobal for at du er med NÅR og DER kunden starter sin kjøpsprosess.',
     label: 'reklame',
     slug: 'seo-sem',
     advantages: [
@@ -159,7 +159,7 @@ let servicesList = [
     name: 'Markedsstrategi & Innsikt',
     id: 6,
     description: 'Vi undersøker muligheter og bruker innsikt og undersøkelse til å skaffe oss et oversiktsbilde og et godt startpunkt. Vi jobber intuitivt med å utarbeide strategier, planer og mål for alle kampanjer.',
-    title: 'Med riktig markedsstrategi og målrettet innsikt når du lettere dine mål. For å treffe ønsket målgruppe, må du først forstå din målgruppe. Derfor starter alt med innsikt. I Involve analyserer vi rundt tre dimensjoner; kunden, kategori/konkurrenter og kundens merkevare. Vår innsikt fører til strategiske anbefalinger og konkrete planer for relevant posisjonering og effektiv kommunikasjon.',
+    title: 'Med riktig markedsstrategi og målrettet innsikt når du lettere dine mål. For å treffe ønsket målgruppe, må du først forstå din målgruppe. Derfor starter alt med innsikt. I GreyGlobal analyserer vi rundt tre dimensjoner; kunden, kategori/konkurrenter og kundens merkevare. Vår innsikt fører til strategiske anbefalinger og konkrete planer for relevant posisjonering og effektiv kommunikasjon.',
     label: 'design',
     slug: 'markedsstrategi-innsikt',
     advantages: [
@@ -211,7 +211,7 @@ let servicesList = [
     name: 'Foto & Video',
     id: 8,
     description: 'Vi fanger den visuelle essensen til din bedrift og utnytter dine beste kvaliteter til å fenge målgruppen. Vi jobber kreativt og utforskende med å visualisere innhold, identitet og informasjon i alle flater.',
-    title: 'Involve planlegger og produserer verdifullt, relevant redaksjonelt innhold som inspirerer og engasjerer din målgruppe. Kanalen velges etter det som treffer målgruppen best, enten det er et tradisjonelt kundemagasin eller løsninger på sosiale medier. Videre jobbes det med måling og optimalisering som ytterligere øker verdien av din investering i godt innhold .',
+    title: 'GreyGlobal planlegger og produserer verdifullt, relevant redaksjonelt innhold som inspirerer og engasjerer din målgruppe. Kanalen velges etter det som treffer målgruppen best, enten det er et tradisjonelt kundemagasin eller løsninger på sosiale medier. Videre jobbes det med måling og optimalisering som ytterligere øker verdien av din investering i godt innhold .',
     label: 'design',
     slug: 'foto-video',
     advantages: [
@@ -233,32 +233,32 @@ let servicesList = [
       }
     ]
   },
-  {
-    name: 'Komplett kommunikasjon',
-    id: 9,
-    description: 'Vi tilbyr tjenester over hele kommunikasjonens spekter. Vi jobber gladelig med alle aspekter av din bedrift og hjelper deg med å snakke med dine kunder på best mulig måte.',
-    title: 'Vi tilbyr tjenester over hele kommunikasjonens spekter. Vi jobber gladelig med alle aspekter av din bedrift og hjelper deg med å snakke med dine kunder på best mulig måte.',
-    label: 'pr',
-    slug: 'komplett-kommunikasjon',
-    advantages: [
-      {
-        name: 'title',
-        desc: 'description',
-      },
-      {
-        name: 'title',
-        desc: 'description',
-      },
-      {
-        name: 'title',
-        desc: 'description',
-      },
-      {
-        name:'title',
-        desc: 'description',
-      }
-    ]
-  },
+  // {
+  //   name: 'Komplett kommunikasjon',
+  //   id: 9,
+  //   description: 'Vi tilbyr tjenester over hele kommunikasjonens spekter. Vi jobber gladelig med alle aspekter av din bedrift og hjelper deg med å snakke med dine kunder på best mulig måte.',
+  //   title: 'Vi tilbyr tjenester over hele kommunikasjonens spekter. Vi jobber gladelig med alle aspekter av din bedrift og hjelper deg med å snakke med dine kunder på best mulig måte.',
+  //   label: 'pr',
+  //   slug: 'komplett-kommunikasjon',
+  //   advantages: [
+  //     {
+  //       name: 'title',
+  //       desc: 'description',
+  //     },
+  //     {
+  //       name: 'title',
+  //       desc: 'description',
+  //     },
+  //     {
+  //       name: 'title',
+  //       desc: 'description',
+  //     },
+  //     {
+  //       name:'title',
+  //       desc: 'description',
+  //     }
+  //   ]
+  // },
 ]
 
 export default  servicesList;

@@ -1,4 +1,3 @@
-import MainPage from "./pages/mainPage/mainPage";
 import {
   ABOUT_ROUTE,
   CASES_ROUTE,
@@ -11,6 +10,8 @@ import {
   TEAM_ROUTE,
   SINGLE_NEWS_ROUTE,
 } from "./utils/consts";
+
+import MainPage from "./pages/mainPage/mainPage";
 import Cases from "./pages/Cases/Cases";
 import Case from "./pages/Cases/Case/Case";
 import Service from "./pages/Services/Service/Service";

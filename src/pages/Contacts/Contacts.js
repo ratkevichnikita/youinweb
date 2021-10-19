@@ -44,7 +44,7 @@ const Contacts = () => {
                     <span className="translate-content">E-post:</span>
                   </p>
                   <Link to="#" className="contacts__main-text translate-parent">
-                    <span className="translate-content">post@involve.no</span>
+                    <span className="translate-content">post@greyglobal.no</span>
                   </Link>
                 </div>
               </li>
@@ -55,7 +55,7 @@ const Contacts = () => {
                     <span className="translate-content">E-post faktura:</span>
                   </p>
                   <Link to="#" className="contacts__main-text translate-parent">
-                    <span className="translate-content"> faktura@involve.no</span>
+                    <span className="translate-content"> faktura@greyglobal.no</span>
                   </Link>
                 </div>
               </li>

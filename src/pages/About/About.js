@@ -18,7 +18,7 @@ import 'swiper/components/pagination/pagination.scss';
 import round from "../../assets/images/round.svg";
 import img from '../../assets/images/aboutPage/about.jpg';
 import SectionLink from "../../common/SectionLink/SectionLink";
-import slide from "../../assets/images/cases/case/slider4.jpg";
+// import slide from "../../assets/images/cases/case/slider4.jpg";
 
 SwiperCore.use([Pagination,Navigation]);
 
@@ -43,7 +43,7 @@ const About = React.memo(() => {
                 <span className="translate-parent"><span className="translate-content">to engage and engage the target audience. So, we: Engage.</span></span>
               </p>
             </div>
-            <img src={round} className="round-img" alt="Involve is a company with its own philosophy and atmosphere"/>
+            <img src={round} className="round-img" alt="GreyGlobal is a company with its own philosophy and atmosphere"/>
           </div>
         </Offer>
       </div>
@@ -56,7 +56,7 @@ const About = React.memo(() => {
             <div className="company-description__info">
               <h2>Komplett kommunikasjonshus</h2>
               <p>
-                Involve er et komplett kommunikasjonshus og består av flere kompetanseområder: reklame, design, PR, sosiale medier og content samt grafisk rådgivning og formidling og et bredt spekter av digitale tjenester. Hos oss jobber vi sammen og tverrfaglig på tvers av kompetansefelt for å skreddersy løsninger etter kundens behov.
+                GreyGlobal er et komplett kommunikasjonshus og består av flere kompetanseområder: reklame, design, PR, sosiale medier og content samt grafisk rådgivning og formidling og et bredt spekter av digitale tjenester. Hos oss jobber vi sammen og tverrfaglig på tvers av kompetansefelt for å skreddersy løsninger etter kundens behov.
               </p>
             </div>
           </div>
@@ -106,7 +106,7 @@ const About = React.memo(() => {
             <div className="company-description__info">
               <h2>Hands on og lave skuldre</h2>
               <p>
-                Involve er kjent for et godt miljø og lave skuldre og vi har en god og avslappet stemning på kontoret som fører til høy trivselsfaktor både for oss og våre kunder. Kombinasjonen av et uformelt miljø, mye kompetanse og lidenskap for jobben gir tillitsfulle kunderelasjoner som varer.
+                GreyGlobal er kjent for et godt miljø og lave skuldre og vi har en god og avslappet stemning på kontoret som fører til høy trivselsfaktor både for oss og våre kunder. Kombinasjonen av et uformelt miljø, mye kompetanse og lidenskap for jobben gir tillitsfulle kunderelasjoner som varer.
               </p>
             </div>
             <div className="company-description__img">
@@ -118,7 +118,7 @@ const About = React.memo(() => {
       <section className="section">
         <div className="wrapper">
             <div className="company-quote">
-              <h3>Involve er et norskeid byrå, men er en del av Havas – et av verdens store reklamenettverk. Involve PR er også en del av Nordic PR Partners, et godt samkjørt nordisk nettverk.</h3>
+              <h3>GreyGlobal er et norskeid byrå, men er en del av Havas – et av verdens store reklamenettverk. Involve PR er også en del av Nordic PR Partners, et godt samkjørt nordisk nettverk.</h3>
               <span>Said someone very smart :)</span>
             </div>
         </div>
@@ -140,15 +140,15 @@ const About = React.memo(() => {
               lazy={true}
               pagination={ { type: 'fraction' } }
             >
-              <SwiperSlide>
-                <img data-src={slide} src={slide} alt=""/>
-              </SwiperSlide>
-              <SwiperSlide>
-                <img data-src={slide} src={slide} alt=""/>
-              </SwiperSlide>
-              <SwiperSlide>
-                <img data-src={slide} src={slide} alt=""/>
-              </SwiperSlide>
+              {/*<SwiperSlide>*/}
+              {/*  <img data-src={slide} src={slide} alt=""/>*/}
+              {/*</SwiperSlide>*/}
+              {/*<SwiperSlide>*/}
+              {/*  <img data-src={slide} src={slide} alt=""/>*/}
+              {/*</SwiperSlide>*/}
+              {/*<SwiperSlide>*/}
+              {/*  <img data-src={slide} src={slide} alt=""/>*/}
+              {/*</SwiperSlide>*/}
             </Swiper>
           </div>
 

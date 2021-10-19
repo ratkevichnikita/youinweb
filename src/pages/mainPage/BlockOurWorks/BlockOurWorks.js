@@ -12,21 +12,17 @@ import classes from './BlcokOurWokrs.module.css'
 const BlockOurWorks = (props) => {
 
   let casesList = props.cases.map((item,index) => {
-    if(index < 4) {
+    if( index === 1 || index === 2 || index === 0 || index === 5 ) {
       return (
         <li key={item.name} className={classes.worksItem}>
           <OnMouseHover >
             <Link to={`/case/${item.slug}`}>
               <div className={classes.image}>
-                <img src={`/static/images/cases/img${item.id}.jpg`} alt="preview of work"/>
+                <img src={`${process.env.PUBLIC_URL}/static/images/cases/${item.id}/img${item.id}.jpg`} alt="preview of work"/>
               </div>
               <div className={classes.worksTitle}>
-                <h4>
-                  {item.name}
-                </h4>
-                <p>
-                  {item.type}
-                </p>
+                <h4>{item.name}</h4>
+                <p>{item.type} </p>
               </div>
             </Link>
           </OnMouseHover>

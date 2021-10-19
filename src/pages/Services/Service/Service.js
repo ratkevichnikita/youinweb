@@ -135,46 +135,31 @@ const Service = React.memo(() => {
       if(item.id === 7) {
 
         graphics = <div className="services__graphics graphics eighth">
-          <svg height="140" width="140" >
+          <svg className="eighth-1" height="140" width="140" >
             <circle cx="70" cy="70" r="68" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0} />
           </svg>
-          <svg height="140" width="140" fill="#fff" fillOpacity={0} >
+          <svg className="eighth-2" height="140" width="140" fill="#fff" fillOpacity={0} >
             <circle cx="70" cy="70" r="68" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0}/>
           </svg>
-          <svg height="140" width="140" fill="#fff"   >
+          <svg className="eighth-3" height="140" width="140" fill="#fff"   >
             <circle cx="70" cy="70" r="68" fill="#F84525" />
           </svg>
         </div>
       }
       if(item.id === 8) {
 
-        graphics = <div className="services__graphics graphics ninth">
-          <svg height="140" width="140" fill="#fff" fillOpacity={0}>
+        graphics = <div className="services__graphics ninth graphics ninth">
+          <svg className="ninth-1" height="140" width="140" fill="#fff" fillOpacity={0}>
             <circle cx="70" cy="70" r="68" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0}/>
           </svg>
-          <svg height="215" width="215" fill="#fff" fillOpacity={0}>
+          <svg className="ninth-2" height="215" width="215" fill="#fff" fillOpacity={0}>
             <circle cx="107" cy="107" r="106" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0}/>
           </svg>
-          <svg height="90" width="90">
+          <svg className="ninth-3" height="90" width="90">
             <circle cx="45" cy="45" r="45" fill="#F84525"/>
           </svg>
         </div>
       }
-      if(item.id === 9) {
-
-        graphics = <div className="services__graphics graphics tenth">
-          <svg height="140" width="140" >
-            <circle cx="70" cy="70" r="68" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0} />
-          </svg>
-          <svg height="140" width="140" fill="#fff"   >
-            <circle cx="70" cy="70" r="68" fill="#F84525" />
-          </svg>
-          <svg height="110" width="110" fill="#fff" fillOpacity={0} >
-            <circle cx="55" cy="55" r="53" stroke="#F84525" strokeWidth="1" fill="#fff" fillOpacity={0}/>
-          </svg>
-        </div>
-      }
-
       return (
         <React.Fragment key={item.id}>
           {graphics}

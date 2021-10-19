@@ -39,7 +39,7 @@ const MainPage = React.memo(() => {
         <HeaderContainer />
         <Offer black>
           <h1>
-            <span className="translate-parent"><span className="translate-content">Advertising.Design.PR</span></span>
+            <span className="translate-parent"><span className="translate-content">Advertising. Design. PR</span></span>
             <span className="translate-parent"><span className="translate-content">We value time and</span></span>
             <span className="translate-parent"><span className="translate-content">details</span></span>
           </h1>

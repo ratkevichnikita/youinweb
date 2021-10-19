@@ -8,11 +8,8 @@ const CaseQuote = () => {
       <div className="wrapper">
         <div className="case-quote">
           <h3>
-            «Involve sin entusiasme, bredde og fordypning må du lete lenge etter! De er profesjonelle, raske på ballen og meget dyktige i sitt arbeid. Vi har hatt det veldig gøy i prosessen og kan anbefale Involve på det varmeste!»
+            “We want to thank involve for amazing contributions and brilliant efforts that have yielded great results! this has been, and is – a very good cooperation!”
           </h3>
-          <p>
-            – Maren Wegge, Markedskonsulent Midgard Vikingsenter
-          </p>
         </div>
       </div>
     </section>

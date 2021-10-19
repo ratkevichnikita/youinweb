@@ -79,7 +79,7 @@ const Team = () => {
 
           </h1>
           <div className="offer__box">
-            <img src={round} className="round-img ml-auto" alt="Involve is a company with its own philosophy and atmosphere"/>
+            <img src={round} className="round-img ml-auto" alt="GreyGlobal is a company with its own philosophy and atmosphere"/>
           </div>
         </Offer>
       </div>

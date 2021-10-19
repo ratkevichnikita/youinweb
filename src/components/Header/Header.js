@@ -77,7 +77,7 @@ const Header = ({
                 </OnMouseHover>
                 <div className="header__info">
                   <p><span>Hoffsveien 1A 0275 Oslo </span></p>
-                  <Link to="mailto:post@involve.no"><span>post@involve.no</span></Link>
+                  <Link to="mailto:post@greyglobal.no"><span>post@greyglobal.no</span></Link>
                   <Link to="tel:23 25 36 00"><span>23 25 36 00</span></Link>
                 </div>
               </div>

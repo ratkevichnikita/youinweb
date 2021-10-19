@@ -16,7 +16,6 @@ import CaseStatistics from "./CaseStatistics/CaseStatistics";
 //images
 import round from "../../../assets/images/round.svg";
 
-
 const Case = () => {
 
     const {casesList} = useContext(Context);
@@ -38,7 +37,11 @@ const Case = () => {
       <div style={{backgroundImage: `url(${caseImage})`}} className="header header-bg-image header-case">
         <HeaderContainer/>
         <Offer>
-          <h1>{caseTitle}</h1>
+          <h1 className="translate-parent">
+            <span  className="translate-content">
+              {caseTitle}
+            </span>
+          </h1>
           <div className="offer__box pt-80">
             <div>
               <ul className="offer__list-for-case">
@@ -57,10 +60,10 @@ const Case = () => {
           </div>
         </Offer>
       </div>
-      <CaseAbout/>
+      <CaseAbout getCurrentService={getCurrentService} />
       <CaseQuote />
-      <CaseGallery />
-      <CaseStatistics />
+      <CaseGallery getCurrentService={getCurrentService} />
+      <CaseStatistics getCurrentService={getCurrentService} />
       <SectionLink path={'#'}>
         <p>Next case</p>
       </SectionLink>

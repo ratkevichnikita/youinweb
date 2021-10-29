@@ -6,7 +6,7 @@ const teamList = [
     email: 'celine.sagenes@greyglobal.no',
     subdivision: 'reklame_design',
     id: '0',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Kjetil Væhle',
@@ -15,7 +15,7 @@ const teamList = [
     email: 'kjetil.vaehle@greyglobal.no',
     subdivision: 'reklame_design',
     id: '1',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Elisabeth Ringdal',
@@ -24,7 +24,7 @@ const teamList = [
     email: 'elisabeth.ringdal@greyglobal.no',
     subdivision: 'reklame_design',
     id: '2',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Hege Thoresen',
@@ -33,7 +33,7 @@ const teamList = [
     email: 'hege.thoresen@greyglobal.no',
     subdivision: 'reklame_design',
     id: '3',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Vidar Bech Braaten',
@@ -42,7 +42,7 @@ const teamList = [
     email: 'vidar@greyglobal.no',
     subdivision: 'reklame_design',
     id: '4',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Anita T. Hedstrøm',
@@ -51,7 +51,7 @@ const teamList = [
     email: 'anita@greyglobal.no',
     subdivision: 'reklame_design',
     id: '5',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Hanne Svendsvoll',
@@ -60,7 +60,7 @@ const teamList = [
     email: 'hanne@greyglobal.no',
     subdivision: 'reklame_design',
     id: '6',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Sissel Jarulf',
@@ -69,7 +69,7 @@ const teamList = [
     email: 'sissel.jarulf@greyglobal.no',
     subdivision: 'reklame_design',
     id: '7',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Sergei Arutiunian',
@@ -78,7 +78,7 @@ const teamList = [
     email: 'elisabeth.ringdal@greyglobal.no',
     subdivision: 'reklame_design',
     id: '8',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Morten Wasa',
@@ -87,7 +87,7 @@ const teamList = [
     email: 'morten.wasa@greyglobal.no',
     subdivision: 'reklame_design',
     id: '9',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Eirik Moldal Andersen',
@@ -96,7 +96,7 @@ const teamList = [
     email: 'eirik@greyglobal.no',
     subdivision: 'reklame_design',
     id: '10',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Arne Thorbeck',
@@ -105,7 +105,7 @@ const teamList = [
     email: 'arne.thorbeck@greyglobal.no',
     subdivision: 'reklame_design',
     id: '11',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Sondre Arthur Ternsten Bye',
@@ -114,7 +114,7 @@ const teamList = [
     email: 'sondre.arthur@greyglobal.no',
     subdivision: 'reklame_design',
     id: '12',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Inger Føyen',
@@ -123,7 +123,7 @@ const teamList = [
     email: 'inger.foyen@greyglobal.no',
     subdivision: 'reklame_design',
     id: '13',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Anne Reed-Larsen',
@@ -132,7 +132,7 @@ const teamList = [
     email: 'anne.reed-larsen@greyglobal.no',
     subdivision: 'pr_content',
     id: '14',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Ingalill Sandal',
@@ -141,7 +141,7 @@ const teamList = [
     email: 'ingalill.sandal@greyglobal.no',
     subdivision: 'pr_content',
     id: '15',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Knut Narvestad',
@@ -150,7 +150,7 @@ const teamList = [
     email: 'knut.narvestad@greyglobal.no',
     subdivision: 'pr_content',
     id: '16',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Hedda Davidsen',
@@ -159,7 +159,7 @@ const teamList = [
     email: 'hedda.davidsen@greyglobal.no',
     subdivision: 'pr_content',
     id: '17',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   }, {
     name: 'Pål Nilssen',
     position: 'Prosjektleder / Rådgiver',
@@ -167,7 +167,7 @@ const teamList = [
     email: 'paal@greyglobal.no',
     subdivision: 'sisteledd_produksjon',
     id: '18',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Erik Forsberg',
@@ -176,7 +176,7 @@ const teamList = [
     email: 'erik.forsberg@greyglobal.no',
     subdivision: 'sisteledd_produksjon',
     id: '19',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Terje Syversen',
@@ -185,7 +185,7 @@ const teamList = [
     email: 'terje@greyglobal.no',
     subdivision: 'sisteledd_produksjon',
     id: '20',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Frode Swahn',
@@ -194,7 +194,7 @@ const teamList = [
     email: 'frode@greyglobal.no',
     subdivision: 'sisteledd_produksjon',
     id: '21',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Don Macdonald',
@@ -203,7 +203,7 @@ const teamList = [
     email: 'don@greyglobal.no',
     subdivision: 'sisteledd_produksjon',
     id: '22',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Ine-C. Eliesen',
@@ -212,7 +212,7 @@ const teamList = [
     email: 'ine@greyglobal.no',
     subdivision: 'sisteledd_produksjon',
     id: '23',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Yiping Gu',
@@ -221,7 +221,7 @@ const teamList = [
     email: 'yiping@greyglobal.no',
     subdivision: 'sisteledd_produksjon',
     id: '24',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Lars Johnsen',
@@ -230,7 +230,7 @@ const teamList = [
     email: 'Lars.johnsen@greyglobal.no',
     subdivision: 'sisteledd_produksjon',
     id: '25',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Liv Hay Hordvik',
@@ -239,7 +239,7 @@ const teamList = [
     email: 'liv@profileringsartikler.no',
     subdivision: 'sisteledd_produksjon',
     id: '26',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Vera Klevan',
@@ -248,7 +248,7 @@ const teamList = [
     email: 'vera@profileringsartikler.no',
     subdivision: 'sisteledd_produksjon',
     id: '27',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Øyvind Nedrelid',
@@ -257,7 +257,7 @@ const teamList = [
     email: 'oyvind.nedrelid@greyglobal.no',
     subdivision: 'admin.',
     id: '28',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Henning Børve Figenschou',
@@ -266,7 +266,7 @@ const teamList = [
     email: 'henning.figenschou@greyglobal.no',
     subdivision: 'admin.',
     id: '29',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Chris Kirkemo',
@@ -275,7 +275,7 @@ const teamList = [
     email: 'Chris.kirkemo@greyglobal.no',
     subdivision: 'admin.',
     id: '30',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
   {
     name: 'Mehdi Nejad',
@@ -284,7 +284,7 @@ const teamList = [
     email: 'mehdi@soft-it.no',
     subdivision: 'admin.',
     id: '31',
-    image: '/static/images/team',
+    image: '/youinweb/static/images/team',
   },
 
 ]

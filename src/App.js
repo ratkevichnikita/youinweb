@@ -38,7 +38,8 @@ function App() {
   // Добавить в стейт список услуг и список портфолио
   useEffect(() => {
     setServicesList(services);
-    setCasesList(cases)
+    let publishedCases = cases.filter(item => item.published)
+    setCasesList(publishedCases || [])
   }, [services,cases])
 
   // Добавить класс body когда открыто модальное окно

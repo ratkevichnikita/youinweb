@@ -28,17 +28,17 @@
     padding-top: 40px;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(300px, 385px));
   }
   &__item {
     position: relative;
     max-width: 385px;
-    opacity: 0;
-    @for $i from 0 through 20 {
-      &:nth-child(#{$i}) {
-        animation: cardShow 1s  #{'0.' + $i + 2}s linear forwards;
-      }
-    }
+    //opacity: 0;
+    //@for $i from 0 through 20 {
+    //  &:nth-child(#{$i}) {
+    //    animation: cardShow 1s  #{'0.' + $i + 2}s linear forwards;
+    //  }
+    //}
     span {
       position: absolute;
       right: 20px;
@@ -74,11 +74,26 @@
   }
 }
 
-@keyframes cardShow {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+//@keyframes cardShow {
+//  0% {
+//    opacity: 0;
+//  }
+//  100% {
+//    opacity: 1;
+//  }
+//}
+
+.opacity-enter {
+  opacity: 0;
+}
+.opacity-enter-active {
+  opacity: 1;
+  transition: all 0.5s ease-in;
+}
+.opacity-exit {
+  opacity: 1;
+}
+.opacity-exit-active {
+  opacity: 0;
+  transition: all 0.5s ease-in;
 }

@@ -94,6 +94,7 @@
   display: block;
   transform: translateY(100%) ;
   animation: translateY 1.5s 0.5s cubic-bezier(.41,0,.13,1.005) forwards;
+  line-height: 1.5em;
 }
 
 @keyframes translateY {

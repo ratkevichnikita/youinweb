@@ -3,9 +3,9 @@ import React from 'react';
 //styles
 import './styles.scss';
 
-const CaseStatistics = ({getCurrentService}) => {
+const CaseStatistics = ({getCurrentCase}) => {
 
-  let statistics = getCurrentService.map(item => item.statistics)
+  let statistics = getCurrentCase.map(item => item.statistics)
   let items;
   if(statistics.length > 0) {
     items = statistics[0].map(item => {

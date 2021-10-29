@@ -11,8 +11,8 @@ import 'swiper/components/pagination/pagination.scss';
 
 SwiperCore.use([Pagination,Navigation]);
 
-const CaseGallery = ({getCurrentService}) => {
-  let slidesUrls = getCurrentService.map(item => item.slideImages);
+const CaseGallery = ({getCurrentCase}) => {
+  let slidesUrls = getCurrentCase.map(item => item.slideImages);
   let slides
     if(slidesUrls[0]?.length > 0) {
       slides = slidesUrls[0].map(item => {

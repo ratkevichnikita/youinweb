@@ -1,5 +1,5 @@
 // global dependencies
-import React, {useContext} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import {Context} from "../../../Context/Context";
 import {useParams} from "react-router-dom";
 
@@ -19,18 +19,31 @@ import round from "../../../assets/images/round.svg";
 const Case = () => {
 
     const {casesList} = useContext(Context);
-
+    const [nextCaseSlug, setNextCaseSlug] = useState(null)
     let params = useParams();
 
-    let getCurrentService = [];
+    let getCurrentCase = [];
+    let currentCaseId;
     let caseImage;
     let caseTitle;
+    let nextCase ;
+    let indexOfCurrentCase;
 
     if (casesList.length > 0) {
-        getCurrentService = casesList.filter(item => item.slug === params.slug );
-        caseTitle = getCurrentService.map(item => item.name);
-        caseImage = getCurrentService.map(item => item.bgImage + 'bg' + item.id + '.jpg').join('');
+        getCurrentCase = casesList.filter(item => item.slug === params.slug );
+        currentCaseId =  getCurrentCase.map(item => item.id ).join('');
+        indexOfCurrentCase = casesList.findIndex(item => +item.id === +currentCaseId)
+        nextCase = casesList.find((item,index) => index === indexOfCurrentCase + 1)
+        caseTitle = getCurrentCase.map(item => item.name);
+        caseImage = getCurrentCase.map(item => item.bgImage + 'bg' + item.id + '.jpg').join('');
+
     }
+    console.log(nextCase)
+    useEffect(() => {
+        if(nextCase) {
+          setNextCaseSlug(nextCase.slug)
+        }
+      },[nextCase])
 
   return (
     <>
@@ -60,11 +73,11 @@ const Case = () => {
           </div>
         </Offer>
       </div>
-      <CaseAbout getCurrentService={getCurrentService} />
+      <CaseAbout getCurrentCase={getCurrentCase} />
       <CaseQuote />
-      <CaseGallery getCurrentService={getCurrentService} />
-      <CaseStatistics getCurrentService={getCurrentService} />
-      <SectionLink path={'#'}>
+      <CaseGallery getCurrentCase={getCurrentCase} />
+      <CaseStatistics getCurrentCase={getCurrentCase} />
+      <SectionLink path={`/case/${nextCase ? nextCaseSlug : 'philippe-de-cheron'}`}>
         <p>Next case</p>
       </SectionLink>
       <Footer/>

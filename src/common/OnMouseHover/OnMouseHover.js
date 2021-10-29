@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import {Context} from "../../Context/Context";
 
-const OnMouseHover = ({children,clas}) => {
+const OnMouseHover = React.memo(({children,clas}) => {
 
   const {setElemOnHover} = useContext(Context)
 
@@ -18,6 +18,6 @@ const OnMouseHover = ({children,clas}) => {
       {children}
     </div>
   );
-};
+});
 
 export default OnMouseHover;

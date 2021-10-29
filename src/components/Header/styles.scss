@@ -7,10 +7,10 @@
 
 .header {
   &.scrolled {
+
     .header__box {
       transform: scale(.9) translateY(0px) translateX(0);
     }
-
     .header__info {
       opacity: 0;
       pointer-events: none;

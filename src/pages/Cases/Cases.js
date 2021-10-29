@@ -12,6 +12,7 @@ import SectionLink from "../../common/SectionLink/SectionLink";
 //styles
 import './styles.scss';
 import OnMouseHover from "../../common/OnMouseHover/OnMouseHover";
+import {CSSTransition, TransitionGroup} from "react-transition-group";
 
 const Cases = React.memo(() => {
 
@@ -66,21 +67,29 @@ const Cases = React.memo(() => {
     prefix = cases
   }
 
-  currentCases = prefix.map(item => {
+  currentCases = <TransitionGroup component={"ul"} className="projects__list" > {prefix.map(item => {
     let firstLetter = item.type.slice(0, 1).toUpperCase();
     let withoutFirstLetter = item.type.slice(1);
     let toUppercaseLetters = firstLetter + withoutFirstLetter;
-    return <li key={item.id} className="projects__item">
-      <OnMouseHover>
-        <Link to={`/case/${item.slug}`}>
-          <div className="projects__image">
-            <img src={`/youinweb/${item.mainImage}/img${item.id}.jpg`} alt={`${item.name}`}/>
-          </div>
-          <span>{toUppercaseLetters}</span>
-        </Link>
-      </OnMouseHover>
-    </li>
-  })
+    return (
+      <CSSTransition
+        key={item.id}
+        timeout={500}
+        classNames="opacity"
+      >
+        <li key={item.id} className="projects__item">
+          <OnMouseHover>
+            <Link to={`/case/${item.slug}`}>
+              <div className="projects__image">
+                <img src={`${item.mainImage}/img${item.id}.jpg`} alt={`${item.name}`}/>
+              </div>
+              <span>{toUppercaseLetters}</span>
+            </Link>
+          </OnMouseHover>
+        </li>
+      </CSSTransition>
+    )
+  })} </TransitionGroup>
 
   useEffect(() => {
     setCasesItems(currentCases)
@@ -100,11 +109,13 @@ const Cases = React.memo(() => {
                   <p>All</p>
                 </Link>
               </li>
-              {captions}
+              {
+                captions
+              }
             </ul>
-            <ul className="projects__list">
-              {casesItems}
-            </ul>
+              {
+                casesItems
+              }
           </div>
         </div>
       </section>
@@ -115,6 +126,6 @@ const Cases = React.memo(() => {
       <Footer/>
     </>
   );
-});
+}) ;
 
 export default Cases;

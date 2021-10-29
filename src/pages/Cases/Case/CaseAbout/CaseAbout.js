@@ -4,8 +4,8 @@ import React from 'react';
 //styles
 import './styles.scss';
 
-const CaseAbout = ({getCurrentService}) => {
-  let description = getCurrentService.map(item => item.description);
+const CaseAbout = ({getCurrentCase}) => {
+  let description = getCurrentCase.map(item => item.description);
   let items
   if(description.length > 0) {
 

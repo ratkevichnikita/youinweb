@@ -153,7 +153,7 @@ const About = React.memo(() => {
           </div>
 
       </section>
-      <SectionLink path={'kontakt'}>
+      <SectionLink path={'contacts'}>
         <p>Contact</p>
       </SectionLink>
       <Footer />

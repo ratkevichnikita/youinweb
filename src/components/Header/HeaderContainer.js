@@ -119,7 +119,7 @@ const HeaderContainer = React.memo(({black}) => {
     return () => {
       document.removeEventListener('scroll', onScroll);
     }
-
+    // eslint-disable-next-line
   }, [location.pathname, params.label])
 
   return (

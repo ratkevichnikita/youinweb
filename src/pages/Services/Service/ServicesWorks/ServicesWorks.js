@@ -17,19 +17,16 @@ const ServicesWorks = () => {
   }, [])
 
   if(casesImage) {
-    x = casesImage.map((item,index) => {
+    casesImage.map((item,index) => {
       if(index <= 5) {
         return (
-          <li>
+          <li key={item.id}>
             <Link to={`/case/${item.slug}`}>
               <img src={`${item.bgImage}img${item.id}.jpg`} alt=""/>
             </Link>
           </li>
-        )
-      }
-
-    })
-  }
+        ) }
+    })}
 
   return (
     <section className="section">

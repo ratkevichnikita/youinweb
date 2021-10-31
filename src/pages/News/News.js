@@ -16,7 +16,6 @@ const News = () => {
   const params = useParams();
 
   const [newsItems, setNewsItems] = useState([]);
-  const [paramsLabel, setParamsLabel] = useState('');
 
   let listOfCategoryNews;
   // let listOfNews;
@@ -25,26 +24,6 @@ const News = () => {
   let newsNames = []
   let currentNews;
   let prefix;
-
-  // const customBtn = useRef(null)
-  // const container = useRef(null)
-  //
-  // function getMousePos(xRef, yRef) {
-  //   let panelRect = container.current.getBoundingClientRect();
-  //   return {
-  //     x: Math.floor(xRef ) / (panelRect.right - panelRect.left) * container.current.offsetWidth,
-  //     y: Math.floor(yRef ) /  (panelRect.bottom - panelRect.top) * container.current.offsetHeight
-  //   };
-  // }
-  //
-  // let handleMove = (e) => {
-  //   let mousePos = getMousePos(e.clientX, e.clientY);
-  //   let buttonCenterX = customBtn.current.offsetLeft + (customBtn.current.offsetWidth / 2);
-  //   let buttonCenterY = customBtn.current.offsetTop + (customBtn.current.offsetHeight / 2);
-  //     let distX = mousePos.x - buttonCenterX;
-  //     let distY = mousePos.y - buttonCenterY;
-  //     customBtn.current.style.transform = "translate("+(distX ) / 12 + "px," + (distY) / 8 + "px)";
-  // }
 
   //получаем массив с категориями новостей
   for (let el of newsItems) {

@@ -246,15 +246,15 @@ let cases = [
     ],
     statistics: [
       {
-        number: '+10',
+        number: '+5',
         title: 'years',
       },
       {
-        number: '+ 220 888',
+        number: '+ 20 888',
         title: 'satisfied clients',
       },
       {
-        number: '+ 1 000 000',
+        number: '+ 400 453',
         title: 'models sold ',
       },
     ]
@@ -266,6 +266,7 @@ let cases = [
     slug:'',
     bgImage: '/youinweb/static/images/cases/7/',
     mainImage: '/youinweb/static/images/cases/7/',
+    published: false,
     statistics: [
       {
         number: '+11',
@@ -287,6 +288,7 @@ let cases = [
     type: 'pr',
     slug:'',
     bgImage: '/youinweb/static/images/cases/8/',
+    published: false,
     mainImage: '/youinweb/static/images/cases/8/',
     statistics: [
       {
@@ -308,6 +310,7 @@ let cases = [
     id: '9',
     type: 'content',
     slug:'',
+    published: false,
     bgImage: '/youinweb/static/images/cases/9/',
     mainImage: '/youinweb/static/images/cases/9/',
     statistics: [
@@ -326,34 +329,64 @@ let cases = [
     ]
   },
   {
-    name: 'handsome',
+    name: 'Group of companies Logistics',
     id: '10',
     type: 'reklame',
-    slug:'',
+    slug:'group-of-companies-logistics',
+    published: true,
     bgImage: '/youinweb/static/images/cases/10/',
     mainImage: '/youinweb/static/images/cases/10',
+    slideImages: ['/youinweb/static/images/cases/10/slides/img.jpg','/youinweb/static/images/cases/10/slides/img-1.jpg','/youinweb/static/images/cases/10/slides/img-2.jpg'],
+    description: [
+      {
+        title: 'The task set',
+        text: 'Order to maintain its position in the market and achieve wider distribution, Scanox wanted to revitalize its product. They wanted to expand the target group beyond just service to also cover the decor and interior market. The paint was to be presented in several matte colors, adapted to modern trends in the interior. In addition, there should have been new, good solutions in the service.',
+        image: '/youinweb/static/images/cases/10/description/img.jpg'
+      },
+      {
+        title: 'And here\'s what we did',
+        text: 'We stand behind visual identity, design of Prospect and new website including own plot selector. The purpose is to make the new website appear modern, be transparent and easy to navigate.\n' +
+          'Behind the work lies an analysis of what has both worked and not worked as well as how the consumer has navigated. Based on this, we have created a website that emphasizes what the consumer is concerned with while maintaining the visual qualities that the customer wants.',
+        image: '/youinweb/static/images/cases/10/description/img-1.jpg'
+      }
+    ],
     statistics: [
       {
-        number: '+12',
+        number: '+3',
         title: 'years',
       },
       {
-        number: '+ 254 674',
+        number: '+ 54 674',
         title: 'satisfied clients',
       },
       {
-        number: '+ 2 543 000',
+        number: '+ 543 000',
         title: 'models sold ',
       },
     ]
   },
   {
-    name: 'handsome',
+    name: 'Photography is Life',
     id: '11',
-    type: 'reklame',
-    slug:'',
+    type: 'pr',
+    slug:'photography-is-life',
+    published: true,
     bgImage: '/youinweb/static/images/cases/11/',
     mainImage: '/youinweb/static/images/cases/11/',
+    slideImages: ['/youinweb/static/images/cases/11/slides/img.jpg','/youinweb/static/images/cases/11/slides/img-1.jpg','/youinweb/static/images/cases/11/slides/img-2.jpg'],
+    description: [
+      {
+        title: 'The task set',
+        text: 'Order to maintain its position in the market and achieve wider distribution, Scanox wanted to revitalize its product. They wanted to expand the target group beyond just service to also cover the decor and interior market. The paint was to be presented in several matte colors, adapted to modern trends in the interior. In addition, there should have been new, good solutions in the service.',
+        image: '/youinweb/static/images/cases/11/description/img.jpg'
+      },
+      {
+        title: 'And here\'s what we did',
+        text: 'We stand behind visual identity, design of Prospect and new website including own plot selector. The purpose is to make the new website appear modern, be transparent and easy to navigate.\n' +
+          'Behind the work lies an analysis of what has both worked and not worked as well as how the consumer has navigated. Based on this, we have created a website that emphasizes what the consumer is concerned with while maintaining the visual qualities that the customer wants.',
+        image: '/youinweb/static/images/cases/11/description/img-1.jpg'
+      }
+    ],
     statistics: [
       {
         number: '+87',

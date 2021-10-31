@@ -26,6 +26,7 @@ const Services = React.memo(() => {
       pageListArr.push(pages[key])
     }
     setPageList(pageListArr)
+    // eslint-disable-next-line
   }, [pageList.length])
 
   let services = servicesList.map(item => {

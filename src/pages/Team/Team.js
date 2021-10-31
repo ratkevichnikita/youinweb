@@ -62,7 +62,6 @@ const Team = () => {
 
     listOfReklameAndDesign = getListOfTeam('reklame_design');
     listOfPrAndContent = getListOfTeam('pr_content');
-    listOfSisteleddProduksjon = getListOfTeam('sisteledd_produksjon');
     listOfAdmin = getListOfTeam('admin.');
     // fullListOfTeam = getListOfTeam()
   }
@@ -103,16 +102,7 @@ const Team = () => {
           </ul>
         </div>
       </section>
-      <section className="section">
-        <div className="wrapper">
-          <h2 className="team__title">
-            Sisteledd & Produksjon
-          </h2>
-          <ul className="team__list pt-80">
-            {listOfSisteleddProduksjon}
-          </ul>
-        </div>
-      </section>
+
       <section className="section bg">
         <div className="wrapper">
           <h2 className="team__title">

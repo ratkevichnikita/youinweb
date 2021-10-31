@@ -18,7 +18,8 @@ import 'swiper/components/pagination/pagination.scss';
 import round from "../../assets/images/round.svg";
 import img from '../../assets/images/aboutPage/about.jpg';
 import SectionLink from "../../common/SectionLink/SectionLink";
-// import slide from "../../assets/images/cases/case/slider4.jpg";
+import slide from '../../assets/images/aboutPage/slide.jpg';
+
 
 SwiperCore.use([Pagination,Navigation]);
 
@@ -140,15 +141,15 @@ const About = React.memo(() => {
               lazy={true}
               pagination={ { type: 'fraction' } }
             >
-              {/*<SwiperSlide>*/}
-              {/*  <img data-src={slide} src={slide} alt=""/>*/}
-              {/*</SwiperSlide>*/}
-              {/*<SwiperSlide>*/}
-              {/*  <img data-src={slide} src={slide} alt=""/>*/}
-              {/*</SwiperSlide>*/}
-              {/*<SwiperSlide>*/}
-              {/*  <img data-src={slide} src={slide} alt=""/>*/}
-              {/*</SwiperSlide>*/}
+              <SwiperSlide>
+                <img data-src={slide} src={slide} alt=""/>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img data-src={slide} src={slide} alt=""/>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img data-src={slide} src={slide} alt=""/>
+              </SwiperSlide>
             </Swiper>
           </div>
 

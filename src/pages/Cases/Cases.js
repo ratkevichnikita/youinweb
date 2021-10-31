@@ -1,7 +1,6 @@
 //global dependencies
-import React, {useEffect, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import {Link, useParams} from "react-router-dom";
-import cases from './../../JSON/json-cases';
 
 //components
 import HeaderContainer from "../../components/Header/HeaderContainer";
@@ -13,12 +12,14 @@ import SectionLink from "../../common/SectionLink/SectionLink";
 import './styles.scss';
 import OnMouseHover from "../../common/OnMouseHover/OnMouseHover";
 import {CSSTransition, TransitionGroup} from "react-transition-group";
+import {Context} from "../../Context/Context";
 
 const Cases = React.memo(() => {
 
   const params = useParams();
-
+  const {casesList} = useContext(Context)
   const [casesItems, setCasesItems] = useState([]);
+
   const [paramsLabel, setParamsLabel] = useState('');
 
   let counts = {};
@@ -27,20 +28,18 @@ const Cases = React.memo(() => {
   let currentCases;
   let prefix;
 
-  //получаем массив с названиями кейсов
-  for (let el of cases) {
+  for (let el of casesList) {
     casesCaptions.push(el.type)
   }
-
   // убираем дубликаты и считаем количество кейсов
   casesCaptions.forEach((x) => {
     counts[x] = (counts[x] || 0) + 1;
   });
-
   // название кейсов и их количество записываем в массив
   for (let item in counts) {
     casesNames.push([item, counts[item]])
   }
+
 
   // выводим список кейсов на страницу
   let captions = casesNames.map((item, index) => {
@@ -62,9 +61,9 @@ const Cases = React.memo(() => {
 
   // выводим список кейсов взамисимости от типа
   if (params.label) {
-    prefix = cases.filter(item => item.type === params.label)
+    prefix = casesList.filter(item => item.type === params.label)
   } else {
-    prefix = cases
+    prefix = casesList
   }
 
   currentCases = <TransitionGroup component={"ul"} className="projects__list" > {prefix.map(item => {
@@ -94,7 +93,8 @@ const Cases = React.memo(() => {
   useEffect(() => {
     setCasesItems(currentCases)
     setParamsLabel(params.label)
-  }, [params.label])
+    // eslint-disable-next-line
+  }, [params.label,casesList.length])
 
   return (
     <>
@@ -105,17 +105,13 @@ const Cases = React.memo(() => {
             <ul className="projects__captions">
               <li className={paramsLabel ? '' : 'active'}>
                 <Link to="/cases">
-                  <span>{cases.length}</span>
+                  <span>{casesList.length}</span>
                   <p>All</p>
                 </Link>
               </li>
-              {
-                captions
-              }
+              { captions }
             </ul>
-              {
-                casesItems
-              }
+              { casesItems }
           </div>
         </div>
       </section>

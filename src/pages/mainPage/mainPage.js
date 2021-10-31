@@ -18,7 +18,6 @@ import BlockClients from "./BlockClients/BlockClients";
 import BlockNews from "./BlockNews/BlockNews";
 
 //images
-import round from "../../assets/images/round.svg";
 import HeaderContainer from "../../components/Header/HeaderContainer";
 
 const MainPage = React.memo(() => {
@@ -31,6 +30,7 @@ const MainPage = React.memo(() => {
     setCases(casesList);
     setServices(servicesList);
     setTeam(teamList);
+    // eslint-disable-next-line
   },[servicesList,casesList,teamList])
 
   return (

@@ -40,6 +40,7 @@ function App() {
     setServicesList(services);
     let publishedCases = cases.filter(item => item.published)
     setCasesList(publishedCases || [])
+    // eslint-disable-next-line
   }, [services,cases])
 
   // Добавить класс body когда открыто модальное окно

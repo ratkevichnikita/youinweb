@@ -76,9 +76,9 @@ const Header = ({
                   </Link>
                 </OnMouseHover>
                 <div className="header__info">
-                  <p><span>Hoffsveien 1A 0275 Oslo </span></p>
+                  <p><span>Maiden 1A 0275 NewYork </span></p>
                   <Link to="mailto:post@greyglobal.no"><span>post@greyglobal.no</span></Link>
-                  <Link to="tel:23 25 36 00"><span>23 25 36 00</span></Link>
+                  <Link to="tel:23 25 36 00"><span>23 22 36 11</span></Link>
                 </div>
               </div>
             </div>
@@ -119,10 +119,10 @@ const Header = ({
                       showImages(event)
                     }}>
                       <OnMouseHover clas={'social-link'}>
-                        <a href="#" target="_blank"
+                        <Link to="#" target="_blank"
                            rel="noreferrer nofollow">
                           <span> Facebook</span>
-                        </a>
+                        </Link>
                       </OnMouseHover>
                     </li>
 
@@ -132,9 +132,9 @@ const Header = ({
                       showImages(event)
                     }}>
                       <OnMouseHover clas={'social-link'}>
-                        <a href="#" target="_blank" rel="noreferrer nofollow">
+                        <Link to="#" target="_blank" rel="noreferrer nofollow">
                           <span>Instagram</span>
-                        </a>
+                        </Link>
                       </OnMouseHover>
                     </li>
                     <li data-name="linkedin" className="modal-link-js" onMouseLeave={() => {
@@ -143,9 +143,9 @@ const Header = ({
                       showImages(event)
                     }}>
                       <OnMouseHover clas={'social-link'}>
-                        <a href="#" target="_blank" rel="noreferrer nofollow">
+                        <Link to="#" target="_blank" rel="noreferrer nofollow">
                           <span> Linkedin</span>
-                        </a>
+                        </Link>
                       </OnMouseHover>
                     </li>
                   </ul>

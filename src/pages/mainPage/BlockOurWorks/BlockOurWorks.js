@@ -12,7 +12,7 @@ import classes from './BlcokOurWokrs.module.css'
 const BlockOurWorks = (props) => {
 
   let casesList = props.cases.map((item,index) => {
-    if( index === 1 || index === 2 || index === 0 || index === 5 ) {
+    if( index === 11 || index === 10 || index === 4 || index === 3 ) {
       return (
         <li key={item.name} className={classes.worksItem}>
           <OnMouseHover >

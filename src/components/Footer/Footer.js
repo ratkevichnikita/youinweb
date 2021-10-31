@@ -3,16 +3,6 @@ import React, {useContext} from 'react';
 import {Link} from "react-router-dom";
 import {Context} from "../../Context/Context";
 
-//route links
-import {
-  ABOUT_ROUTE,
-  CASES_ROUTE,
-  CONTACTS_ROUTE,
-  MAIN_PAGE_ROUTE, NEWS_ROUTE,
-  SERVICES_ROUTE,
-  TEAM_ROUTE
-} from "../../utils/consts";
-
 //components
 import BouncingLetters from "../../common/BounsingLetters/BouncingLetters";
 import OnMouseHover from "../../common/OnMouseHover/OnMouseHover";
@@ -95,23 +85,23 @@ const Footer = () => {
               <ul className="block-footer__list-inner">
                 <li className="border-bottom">
                   <OnMouseHover>
-                    <a href="#" target="_blank" rel="noreferrer nofollow">
+                    <Link to="#" target="_blank" rel="noreferrer nofollow">
                       Facebook
-                    </a>
+                    </Link>
                   </OnMouseHover>
                 </li>
                 <li className="border-bottom">
                   <OnMouseHover>
-                    <a href="#" target="_blank" rel="noreferrer nofollow">
+                    <Link to="#" target="_blank" rel="noreferrer nofollow">
                       instagram
-                    </a>
+                    </Link>
                   </OnMouseHover>
                 </li>
                 <li className="border-bottom">
                   <OnMouseHover>
-                    <a href="#" target="_blank" rel="noreferrer nofollow">
+                    <Link to="#" target="_blank" rel="noreferrer nofollow">
                       Linkedin
-                    </a>
+                    </Link>
                   </OnMouseHover>
                 </li>
               </ul>
@@ -129,11 +119,11 @@ const Footer = () => {
                 </li>
                 <li className="map-link">
                   <OnMouseHover>
-                    <a
-                      href="#"
+                    <Link
+                      to="#"
                       target="_blank" rel="noreferrer nofollow">
                       View on Maps
-                    </a>
+                    </Link>
                   </OnMouseHover>
                 </li>
               </ul>
